@@ -1,0 +1,12 @@
+# Backup files
+*.asv
+*~
+
+
+# Other people's stuff
+notes/OHBM2009*SG.pdf
+
+# Audapter
+Audapter-DAF/
+
+

@@ -1,0 +1,35 @@
+SUBJECT_ID      TS_20120807_1
+SUBJECT_GENDER  male
+SUBJECT_DOB     1-JAN-1983
+SUBJECT_GROUP	CWS
+
+DATA_DIR        E:\DATA\SDAP
+
+PITCH_SHIFT_DOWN       -2  % Unit: semitones
+PITCH_SHIFT_UP				2  % Unit: semitones
+
+MOUTH_MIC_DIST  10      % Unit: cm
+
+SPL_TARGET      74      % Unit: dB A SPL. Lowered from the adult target of 76
+SPL_RANGE       8       % Unit: dB A SPL: single-sided width
+
+VOWEL_LEN_TARG  0.40     % sec 
+VOWEL_LEN_RANGE 0.10     % sec: single-sided width
+
+USE_SPL_TARGET				0 % A 0/1 variable indicating whether the SPL target will be used.
+USE_VOWEL_LEN_TARGET	0 % A 0/1 variable indicating whether the vowel length will be used.
+
+NUM_RUNS				8		% Should match ExptDesign.xls
+TRIALS_PER_RUN		40 	% Should match ExptDesign.xls
+
+MRI_TR 			7.5  % Unit: sec.
+MRI_TA 			2.5  % Unit: sec.
+STIM_DELAY		0.3 % Unit: sec. Delay from the scanner trigger to the onset of the visual stimulus display
+REC_DELAY		0.3 % Unit: sec. Delay from the scanner trigger to the onset of the auditory feedback and audio recording. Should be equal to or greather than STIM_DELAY
+REC_LEN			3.5 % Unit: sec. Length of the audio recording and/or auditory feedback perturbation.
+
+SAMPLING_RATE   48000
+FRAME_SIZE      96 % MicroBook: 96; UltraLite: 64  
+DOWNSAMP_FACT   3 % MicroBook: 3; UltraLite: 4
+
+MASK_NOISE_LV	75 % Level of the multi-talker-babble masking noise. Unit: dB(A) SPL
