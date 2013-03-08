@@ -335,6 +335,7 @@ ylabel('Wave Out');
 
 % Spectrogram and RMS of input 
 set(gcf,'CurrentAxes',handles.figIdDat(4));
+cla;
 [s, f, t]=spectrogram(data.signalIn, 128, 96, 1024, data.params.sr);
 imagesc(t, f, 10 * log10(abs(s))); hold on;
 axis xy;
@@ -349,6 +350,7 @@ ylabel('Frequency (Hz)');
 
 % Spectrogram of output
 set(gcf,'CurrentAxes',handles.figIdDat(5));
+cla;
 [s, f, t]=spectrogram(data.signalOut, 128, 96, 1024, data.params.sr);
 imagesc(t, f, 10 * log10(abs(s))); hold on;
 axis xy;
