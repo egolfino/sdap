@@ -515,6 +515,7 @@ if (handles.debug==0)
         imBG=imread(fullfile(pwd,'graphics','pseudochars',handles.skin.dPseudowords(ceil(rand*8)).name));	% Balance timing
 
 %             set(handles.pic_imgh, 'Visible', 'off');
+        set(handles.strh, 'FontSize', 45);
         set(handles.strh, 'String', handles.word, 'Visible', 'on');
         drawnow;
 %             k=findStringInCell(tWords,handles.word);

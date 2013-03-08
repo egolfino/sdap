@@ -250,7 +250,21 @@ else
         set(hgui.msgh, 'FontSize', 30);
 	else
 		set(hgui.UIrecorder,'Position',[-1400,180,1254,857],'toolbar','none');
-	end
+    end
+    if isequal(expt_config.BACKGROUND_COLOR, 'BLACK')
+        set(hgui.UIrecorder, 'Color', 'k');
+        set(hgui.msgh, 'BackgroundColor', 'k');
+        set(hgui.strh, 'BackgroundColor', 'k');
+        
+        hgui.skin.fixation = imread(fullfile(pwd, 'graphics', 'fixation_blackBG.bmp'));
+    end
+    
+    if isequal(expt_config.TEXT_COLOR, 'WHITE')
+        set(hgui.msgh, 'ForegroundColor', 'w');
+        set(hgui.strh, 'ForegroundColor', 'w');
+    end
+    
+    
 	
 end
 
@@ -541,9 +555,9 @@ while n <= expt.expt_config.NUM_RUNS
 %             hgui.showTextCue=1;
 %     end
 %     drawnow    
-    
 
-    set(hgui.msgh, 'string', getMsgStr(n), 'visible', 'on');
+    set(hgui.strh, 'string', getMsgStr(n), 'visible', 'on');
+    set(hgui.strh, 'FontSize', 24);
 
     MexIO('init', p);  %SC Inject p to TransShiftMex
 
