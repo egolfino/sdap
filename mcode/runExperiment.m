@@ -557,7 +557,7 @@ while n <= expt.expt_config.NUM_RUNS
 %     drawnow    
 
     set(hgui.strh, 'string', getMsgStr(n), 'visible', 'on');
-    set(hgui.strh, 'FontSize', 24);
+    set(hgui.strh, 'FontSize', 30);
 
     MexIO('init', p);  %SC Inject p to TransShiftMex
 

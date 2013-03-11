@@ -1,7 +1,7 @@
 SUBJECT_ID      GUE02_20130306
 SUBJECT_GENDER  female
-SUBJECT_DOB     1-JAN-1952
-SUBJECT_GROUP	CON
+SUBJECT_DOB     1-JAN-0000
+SUBJECT_GROUP	NA
 
 DATA_DIR        C:\SDAP_DATA
 
@@ -36,3 +36,5 @@ FRAME_SIZE      96 % MicroBook: 96; UltraLite: 64
 DOWNSAMP_FACT   3 % MicroBook: 3; UltraLite: 4
 
 MASK_NOISE_LV	85 % Level of the multi-talker-babble masking noise. Unit: dB(A) SPL
+		   % Hall and Plack (2009). Pitch processing sites in the human auditory cortex. Cerebral Cortex 19(3): 576-585
+	           % 83 dB SPL behavioral sessions and 90 dB SPL for the fMRI

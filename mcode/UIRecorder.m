@@ -1,28 +1,28 @@
-function varargout = UIRecorder(varargin)
-% UIRECORDER M-file for UIrecorder.fig
-%      UIRECORDER, by itself, creates a new UIRECORDER or raises the existing
+function varargout = UIRecorder_modified(varargin)
+% UIRECORDER_MODIFIED M-file for uirecorder_modified.fig
+%      UIRECORDER_MODIFIED, by itself, creates a new UIRECORDER_MODIFIED or raises the existing
 %      singleton*.
 %
-%      H = UIRECORDER returns the handle to a new UIRECORDER or the handle to
+%      H = UIRECORDER_MODIFIED returns the handle to a new UIRECORDER_MODIFIED or the handle to
 %      the existing singleton*.
 %
-%      UIRECORDER('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in UIRECORDER.M with the given input arguments.
+%      UIRECORDER_MODIFIED('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in UIRECORDER_MODIFIED.M with the given input arguments.
 %
-%      UIRECORDER('Property','Value',...) creates a new UIRECORDER or raises the
+%      UIRECORDER_MODIFIED('Property','Value',...) creates a new UIRECORDER_MODIFIED or raises the
 %      existing singleton*.  Starting from the left, property value pairs are
 %      applied to the GUI before UIrecorder_OpeningFunction gets called.  An
 %      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to UIrecorder_OpeningFcn via varargin.
+%      stop.  All inputs are passed to uirecorder_modified_openingfcn via varargin.
 %
 %      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
 %      instance to run (singleton)".
 %
 % See also: GUIDE, GUIDATA, GUIHANDLES
 
-% Edit the above text to modify the response to help UIrecorder
+% Edit the above text to modify the response to help uirecorder_modified
 
-% Last Modified by GUIDE v2.5 29-Jul-2012 16:29:08
+% Last Modified by GUIDE v2.5 11-Mar-2013 12:27:05
 
 %%
 % Begin initialization code - DO NOT EDIT
@@ -49,7 +49,7 @@ if (~isempty(findStringInCell(varargin,'figIdDat')))
     figIdDat=varargin{findStringInCell(varargin,'figIdDat')+1};
 end
 
-%% --- Executes just before UIrecorder is made visible.
+%% --- Executes just before uirecorder_modified is made visible.
 function UIrecorder_OpeningFcn(hObject, eventdata, handles, varargin)
 % This function has no output args, see OutputFcn.
 % hObject    handle to figure
@@ -243,7 +243,7 @@ guidata(hObject, handles);
 
 
 
-% UIWAIT makes UIrecorder wait for user response (see UIRESUME)
+% UIWAIT makes uirecorder_modified wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
 
 %% --- Outputs from this function are returned to the command line.
@@ -300,7 +300,7 @@ if (isequal(evnt.Key,hgui.trigKey) || isequal(evnt.Key,'a'))
     
     uiresume(hgui.UIrecorder);
 else
-% 	set(hgui.UIrecorder,'UserData','nogo');
+% 	set(hgui.uirecorder_modified,'UserData','nogo');
 end
 
 lastTrigTime = eTime;
@@ -381,7 +381,7 @@ guidata(handles.UIrecorder, handles);
 % set(handles.next,'visible','on')
 % set(handles.prev,'visible','on')
 % if(get(handles.auto_btn,'Value')==get(handles.auto_btn,'Max'))
-%     next_Callback(handles.UIrecorder,[],handles)
+%     next_Callback(handles.uirecorder_modified,[],handles)
 % end
 
 %% --------------------------------------------------------------------------
@@ -468,9 +468,9 @@ if (handles.debug==0)
     % 	end
     % 	waitTime=get(handles.rec_slider,'Max')-get(handles.rec_slider,'Value')+2.0+rand*0.25	
     % 	tic;
-    % 	uiwait(handles.UIrecorder,waitTime);
+    % 	uiwait(handles.uirecorder_modified,waitTime);
     % 	a=toc;
-    % 	tKey=get(handles.UIrecorder,'UserData');
+    % 	tKey=get(handles.uirecorder_modified,'UserData');
     % 	dataOut.respTime=a;
     % 	if isstruct(tKey)
     % 		dataOut.results='timeout';
@@ -497,7 +497,7 @@ if (handles.debug==0)
     % 			end
     % 		end	
     % 	end
-    % 	set(handles.UIrecorder,'UserData',dataOut);
+    % 	set(handles.uirecorder_modified,'UserData',dataOut);
     % 	
     % else
 
