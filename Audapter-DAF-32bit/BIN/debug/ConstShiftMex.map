@@ -1,0 +1,1163 @@
+ ConstShiftMex
+
+ Timestamp is 4957af47 (Sun Dec 28 11:54:31 2008)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00010000H .textbss                DATA
+ 0002:00000000 0001c49aH .text                   CODE
+ 0002:0001c4a0 00002105H .text$x                 CODE
+ 0002:0001e5b0 00001023H .text$yc                CODE
+ 0002:0001f5e0 00001064H .text$yd                CODE
+ 0003:00000000 00000104H .CRT$XCA                DATA
+ 0003:00000104 00000104H .CRT$XCU                DATA
+ 0003:00000208 00000104H .CRT$XCZ                DATA
+ 0003:0000030c 00000104H .CRT$XIA                DATA
+ 0003:00000410 00000104H .CRT$XIAA               DATA
+ 0003:00000514 00000104H .CRT$XIC                DATA
+ 0003:00000618 00000104H .CRT$XIZ                DATA
+ 0003:00000720 0000377aH .rdata                  DATA
+ 0003:00003e9c 00000166H .rdata$debug            DATA
+ 0003:00004004 000003cbH .rdata$r                DATA
+ 0003:000043d0 00000104H .rtc$IAA                DATA
+ 0003:000044d4 0000010eH .rtc$IMZ                DATA
+ 0003:000045e4 00000104H .rtc$IZZ                DATA
+ 0003:000046e8 00000104H .rtc$TAA                DATA
+ 0003:000047ec 0000010eH .rtc$TMZ                DATA
+ 0003:000048fc 00000104H .rtc$TZZ                DATA
+ 0003:00004a00 00001a03H .xdata$x                DATA
+ 0003:00006410 00000163H .edata                  DATA
+ 0004:00000000 000003c6H .data                   DATA
+ 0004:000003c8 0128c254H .bss                    DATA
+ 0005:00000000 000000a0H .idata$2                DATA
+ 0005:000000a0 00000014H .idata$3                DATA
+ 0005:000000b4 00000408H .idata$4                DATA
+ 0005:000004bc 00000408H .idata$5                DATA
+ 0005:000008c4 00001409H .idata$6                DATA
+ 0006:00000000 00000169H .rsrc$01                DATA
+ 0006:00000170 000002e9H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000000       __enc$textbss$begin        10001000     <linker-defined>
+ 0001:00010000       __enc$textbss$end          10011000     <linker-defined>
+ 0002:000017e0       ?algoCallbackFunc@@YAHPADHPAX@Z 100127e0 f   ConstShift.obj
+ 0002:00001850       ??0ConstShift@@QAE@XZ      10012850 f   ConstShift.obj
+ 0002:00001ed0       ?reset@ConstShift@@QAEXXZ  10012ed0 f   ConstShift.obj
+ 0002:000023e0       ?sw@@YAHQAPADPBDABH@Z      100133e0 f   ConstShift.obj
+ 0002:000024a0       ?setparams@ConstShift@@QAEHPAX0@Z 100134a0 f   ConstShift.obj
+ 0002:000029d0       ?getparams@ConstShift@@QAEHPAX@Z 100139d0 f   ConstShift.obj
+ 0002:00002b80       ?getsignal@ConstShift@@QAEPBNAAH@Z 10013b80 f   ConstShift.obj
+ 0002:00002be0       ?getdata@ConstShift@@QAEPBNAAH0@Z 10013be0 f   ConstShift.obj
+ 0002:00002c90       ?myProcess@ConstShift@@QAEHPAN0H@Z 10013c90 f   ConstShift.obj
+ 0002:00003be0       ?getWma@ConstShift@@AAEHPAN000@Z 10014be0 f   ConstShift.obj
+ 0002:00003ec0       ?getAi@ConstShift@@AAEXPAN0HH@Z 10014ec0 f   ConstShift.obj
+ 0002:00004050       ?getGain@ConstShift@@AAENPAN00H@Z 10015050 f   ConstShift.obj
+ 0002:000041f0       ?gainAdapt@ConstShift@@AAEHPAN0HH@Z 100151f0 f   ConstShift.obj
+ 0002:000043b0       ?levinson@ConstShift@@AAEXPAN0H@Z 100153b0 f   ConstShift.obj
+ 0002:000045c0       ?hqr_roots@ConstShift@@AAEHPAN000H@Z 100155c0 f   ConstShift.obj
+ 0002:00005720       ?getRPhiBw@ConstShift@@AAEXPAN0000@Z 10016720 f   ConstShift.obj
+ 0002:00005c80       ?trackPhi@ConstShift@@AAEXPAN0N@Z 10016c80 f   ConstShift.obj
+ 0002:000065f0       ?myFilt@ConstShift@@AAEXPAN0000H@Z 100175f0 f   ConstShift.obj
+ 0002:00006830       ?calcRMS1@ConstShift@@AAENPBNH@Z 10017830 f   ConstShift.obj
+ 0002:000068f0       ?calcRMS2@ConstShift@@AAENPBNH@Z 100178f0 f   ConstShift.obj
+ 0002:000069b0       ?calcRMS3@ConstShift@@AAENPBNH@Z 100179b0 f   ConstShift.obj
+ 0002:00006a70       ?sign@ConstShift@@AAEHN@Z  10017a70 f   ConstShift.obj
+ 0002:00006ae0       ?downSampSig@ConstShift@@AAEXPAN00000HHH@Z 10017ae0 f   ConstShift.obj
+ 0002:00006bb0       ?upSampSig@ConstShift@@AAEXPAN00000HHHN@Z 10017bb0 f   ConstShift.obj
+ 0002:00006c90       ?iir_filt@ConstShift@@AAEXPAN0000HHN@Z 10017c90 f   ConstShift.obj
+ 0002:00006dd0       ?DSPF_dp_blk_move@@YAXPBNPANH@Z 10017dd0 f   DSPF.obj
+ 0002:00006e40       ?DSPF_dp_vecsum_sq@@YANPBNH@Z 10017e40 f   DSPF.obj
+ 0002:00006ec0       ?DSPF_dp_fir_gen@@YAXPBN0PANHH@Z 10017ec0 f   DSPF.obj
+ 0002:00006f70       ?DSPF_dp_biquad@@YAXPAN0000H@Z 10017f70 f   DSPF.obj
+ 0002:000070a0       ?DSPF_dp_maxval@@YANPBNH@Z 100180a0 f   DSPF.obj
+ 0002:00007130       ?DSPF_dp_vecmul@@YAXPBN0PANH@Z 10018130 f   DSPF.obj
+ 0002:000071b0       ?DSPF_dp_autocor@@YAXPAN0HH@Z 100181b0 f   DSPF.obj
+ 0002:00007260       ?DSPF_dp_iirlat@@YAXPANHPBNH00@Z 10018260 f   DSPF.obj
+ 0002:00007350       _mexFunction               10018350 f   mexLibrary.obj
+ 0002:00007ae0       ?size@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBEIXZ 10018ae0 f i mexLibrary.obj
+ 0002:00007b60       ??A?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAEAAUAudioDeviceInfo@@I@Z 10018b60 f i mexLibrary.obj
+ 0002:00007cda       _mxCreateDoubleMatrix_730  10018cda f   libmx:libmx.dll
+ 0002:00007ce0       _mxArrayToString           10018ce0 f   libmx:libmx.dll
+ 0002:00007ce6       _mxGetPr                   10018ce6 f   libmx:libmx.dll
+ 0002:00007cec       _mexPrintf                 10018cec f   libmex:libmex.dll
+ 0002:00007d00       ??0audioIO@@QAE@XZ         10018d00 f   audioio:audioIO.obj
+ 0002:00008030       ??1audioIO@@QAE@XZ         10019030 f   audioio:audioIO.obj
+ 0002:000080e0       ?setcallbackparams@audioIO@@QAEHHPAX0@Z 100190e0 f   audioio:audioIO.obj
+ 0002:00008110       ?setdevparams@audioIO@@QAEHPAUDeviceParams@@H@Z 10019110 f   audioio:audioIO.obj
+ 0002:000081d0       ?startdev@audioIO@@QAEHXZ  100191d0 f   audioio:audioIO.obj
+ 0002:00008370       ?stopdev@audioIO@@QAEHH@Z  10019370 f   audioio:audioIO.obj
+ 0002:00008620       ??0RtAudioDeviceInfo@@QAE@XZ 10019620 f i audioio:audioIO.obj
+ 0002:000086f0       ?getDeviceCount@RtAudio@@QAEHXZ 100196f0 f i audioio:audioIO.obj
+ 0002:00008710       ?getDeviceInfo@RtAudio@@QAE?AURtAudioDeviceInfo@@H@Z 10019710 f i audioio:audioIO.obj
+ 0002:00008760       ??1RtAudioDeviceInfo@@QAE@XZ 10019760 f i audioio:audioIO.obj
+ 0002:000087d0       ??4RtAudioDeviceInfo@@QAEAAU0@ABU0@@Z 100197d0 f i audioio:audioIO.obj
+ 0002:00008870       ??_GRtAudio@@QAEPAXI@Z     10019870 f i audioio:audioIO.obj
+ 0002:000088b0       ?setStreamCallback@RtAudio@@QAEXP6AHPADHPAX@Z1@Z 100198b0 f i audioio:audioIO.obj
+ 0002:000088e0       ?startStream@RtAudio@@QAEXXZ 100198e0 f i audioio:audioIO.obj
+ 0002:00008910       ?closeStream@RtAudio@@QAEXXZ 10019910 f i audioio:audioIO.obj
+ 0002:00008940       ?stopStream@RtAudio@@QAEXXZ 10019940 f i audioio:audioIO.obj
+ 0002:00008970       ??0_Has_debug_it@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@_N@Z 10019970 f i audioio:audioIO.obj
+ 0002:00008990       ??0?$vector@HV?$allocator@H@std@@@std@@QAE@XZ 10019990 f i audioio:audioIO.obj
+ 0002:00008a10       ??1?$vector@HV?$allocator@H@std@@@std@@QAE@XZ 10019a10 f i audioio:audioIO.obj
+ 0002:00008a80       ??4?$vector@HV?$allocator@H@std@@@std@@QAEAAV01@ABV01@@Z 10019a80 f i audioio:audioIO.obj
+ 0002:00008c70       ??0?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@XZ 10019c70 f i audioio:audioIO.obj
+ 0002:00008cf0       ??1?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@XZ 10019cf0 f i audioio:audioIO.obj
+ 0002:00008d60       ?resize@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAEXI@Z 10019d60 f i audioio:audioIO.obj
+ 0002:00008da0       ??0AudioDeviceInfo@@QAE@XZ 10019da0 f i audioio:audioIO.obj
+ 0002:00008e60       ??1?$_Vector_val@HV?$allocator@H@std@@@std@@QAE@XZ 10019e60 f i audioio:audioIO.obj
+ 0002:00008e80       ??1?$_Vector_val@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@XZ 10019e80 f i audioio:audioIO.obj
+ 0002:00008ea0       ?capacity@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ 10019ea0 f i audioio:audioIO.obj
+ 0002:00008ef0       ?size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ 10019ef0 f i audioio:audioIO.obj
+ 0002:00008f40       ?clear@?$vector@HV?$allocator@H@std@@@std@@QAEXXZ 10019f40 f i audioio:audioIO.obj
+ 0002:00008ff0       ?_Buy@?$vector@HV?$allocator@H@std@@@std@@IAE_NI@Z 10019ff0 f i audioio:audioIO.obj
+ 0002:00009090       ?_Destroy@?$vector@HV?$allocator@H@std@@@std@@IAEXPAH0@Z 1001a090 f i audioio:audioIO.obj
+ 0002:000090c0       ?_Tidy@?$vector@HV?$allocator@H@std@@@std@@IAEXXZ 1001a0c0 f i audioio:audioIO.obj
+ 0002:00009150       ??0?$_Vector_val@HV?$allocator@H@std@@@std@@IAE@V?$allocator@H@1@@Z 1001a150 f i audioio:audioIO.obj
+ 0002:00009190       ??0?$allocator@H@std@@QAE@XZ 1001a190 f i audioio:audioIO.obj
+ 0002:000091b0       ?deallocate@?$allocator@H@std@@QAEXPAHI@Z 1001a1b0 f i audioio:audioIO.obj
+ 0002:000091d0       ?resize@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAEXIUAudioDeviceInfo@@@Z 1001a1d0 f i audioio:audioIO.obj
+ 0002:00009330       ??1AudioDeviceInfo@@QAE@XZ 1001a330 f i audioio:audioIO.obj
+ 0002:000093a0       ?_Buy@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAE_NI@Z 1001a3a0 f i audioio:audioIO.obj
+ 0002:00009440       ?_Tidy@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAEXXZ 1001a440 f i audioio:audioIO.obj
+ 0002:000094e0       ??0?$_Vector_val@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAE@V?$allocator@UAudioDeviceInfo@@@1@@Z 1001a4e0 f i audioio:audioIO.obj
+ 0002:00009520       ??0?$allocator@UAudioDeviceInfo@@@std@@QAE@XZ 1001a520 f i audioio:audioIO.obj
+ 0002:00009540       ??1?$_Vector_iterator@HV?$allocator@H@std@@@std@@QAE@XZ 1001a540 f i audioio:audioIO.obj
+ 0002:00009560       ??1?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@XZ 1001a560 f i audioio:audioIO.obj
+ 0002:00009580       ??1?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QAE@XZ 1001a580 f i audioio:audioIO.obj
+ 0002:000095a0       ??1?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@XZ 1001a5a0 f i audioio:audioIO.obj
+ 0002:000095c0       ??1?$_Ranit@HHPBHABH@std@@QAE@XZ 1001a5c0 f i audioio:audioIO.obj
+ 0002:000095e0       ??1_Iterator_base@std@@QAE@XZ 1001a5e0 f i audioio:audioIO.obj
+ 0002:00009660       ?_Orphan_me@_Iterator_base@std@@QAEXXZ 1001a660 f i audioio:audioIO.obj
+ 0002:00009700       ??1?$_Ranit@UAudioDeviceInfo@@HPBU1@ABU1@@std@@QAE@XZ 1001a700 f i audioio:audioIO.obj
+ 0002:00009720       ?begin@?$vector@HV?$allocator@H@std@@@std@@QAE?AV?$_Vector_iterator@HV?$allocator@H@std@@@2@XZ 1001a720 f i audioio:audioIO.obj
+ 0002:00009770       ?end@?$vector@HV?$allocator@H@std@@@std@@QAE?AV?$_Vector_iterator@HV?$allocator@H@std@@@2@XZ 1001a770 f i audioio:audioIO.obj
+ 0002:000097c0       ?max_size@?$vector@HV?$allocator@H@std@@@std@@QBEIXZ 1001a7c0 f i audioio:audioIO.obj
+ 0002:000097e0       ?erase@?$vector@HV?$allocator@H@std@@@std@@QAE?AV?$_Vector_iterator@HV?$allocator@H@std@@@2@V32@0@Z 1001a7e0 f i audioio:audioIO.obj
+ 0002:00009950       ?_Xlen@?$vector@HV?$allocator@H@std@@@std@@KAXXZ 1001a950 f i audioio:audioIO.obj
+ 0002:000099e0       ??0length_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 1001a9e0 f i audioio:audioIO.obj
+ 0002:00009a10       ??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 1001aa10 f i audioio:audioIO.obj
+ 0002:00009aa0       ?what@logic_error@std@@UBEPBDXZ 1001aaa0 f i audioio:audioIO.obj
+ 0002:00009ac0       ??_Glogic_error@std@@UAEPAXI@Z 1001aac0 f i audioio:audioIO.obj
+ 0002:00009ac0       ??_Elogic_error@std@@UAEPAXI@Z 1001aac0 f i audioio:audioIO.obj
+ 0002:00009b00       ??1logic_error@std@@UAE@XZ 1001ab00 f i audioio:audioIO.obj
+ 0002:00009b40       ??1length_error@std@@UAE@XZ 1001ab40 f i audioio:audioIO.obj
+ 0002:00009b70       ??_Elength_error@std@@UAEPAXI@Z 1001ab70 f i audioio:audioIO.obj
+ 0002:00009b70       ??_Glength_error@std@@UAEPAXI@Z 1001ab70 f i audioio:audioIO.obj
+ 0002:00009bb0       ??0logic_error@std@@QAE@ABV01@@Z 1001abb0 f i audioio:audioIO.obj
+ 0002:00009c40       ??0?$allocator@H@std@@QAE@ABV01@@Z 1001ac40 f i audioio:audioIO.obj
+ 0002:00009c60       ?allocate@?$allocator@H@std@@QAEPAHI@Z 1001ac60 f i audioio:audioIO.obj
+ 0002:00009c90       ?begin@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE?AV?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@2@XZ 1001ac90 f i audioio:audioIO.obj
+ 0002:00009ce0       ?end@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE?AV?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@2@XZ 1001ace0 f i audioio:audioIO.obj
+ 0002:00009d30       ?max_size@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBEIXZ 1001ad30 f i audioio:audioIO.obj
+ 0002:00009d50       ?erase@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE?AV?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@2@V32@0@Z 1001ad50 f i audioio:audioIO.obj
+ 0002:00009ec0       ?_Destroy@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAEXPAUAudioDeviceInfo@@0@Z 1001aec0 f i audioio:audioIO.obj
+ 0002:00009ef0       ?_Insert_n@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAEXV?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@2@IABUAudioDeviceInfo@@@Z 1001aef0 f i audioio:audioIO.obj
+ 0002:0000a3e0       ?_Xlen@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@KAXXZ 1001b3e0 f i audioio:audioIO.obj
+ 0002:0000a470       ??0?$allocator@UAudioDeviceInfo@@@std@@QAE@ABV01@@Z 1001b470 f i audioio:audioIO.obj
+ 0002:0000a490       ?deallocate@?$allocator@UAudioDeviceInfo@@@std@@QAEXPAUAudioDeviceInfo@@I@Z 1001b490 f i audioio:audioIO.obj
+ 0002:0000a4b0       ?allocate@?$allocator@UAudioDeviceInfo@@@std@@QAEPAUAudioDeviceInfo@@I@Z 1001b4b0 f i audioio:audioIO.obj
+ 0002:0000a4e0       ??H?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBE?AV01@H@Z 1001b4e0 f i audioio:audioIO.obj
+ 0002:0000a580       ??0length_error@std@@QAE@ABV01@@Z 1001b580 f i audioio:audioIO.obj
+ 0002:0000a5b0       ??0AudioDeviceInfo@@QAE@ABU0@@Z 1001b5b0 f i audioio:audioIO.obj
+ 0002:0000a680       ??0?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@ABV01@@Z 1001b680 f i audioio:audioIO.obj
+ 0002:0000a6b0       ??0?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@ABV01@@Z 1001b6b0 f i audioio:audioIO.obj
+ 0002:0000a6f0       ??0?$_Ranit@UAudioDeviceInfo@@HPBU1@ABU1@@std@@QAE@ABU01@@Z 1001b6f0 f i audioio:audioIO.obj
+ 0002:0000a720       ??0_Iterator_base@std@@QAE@ABV01@@Z 1001b720 f i audioio:audioIO.obj
+ 0002:0000a760       ??4_Iterator_base@std@@QAEAAV01@ABV01@@Z 1001b760 f i audioio:audioIO.obj
+ 0002:0000a800       ?_Adopt@_Iterator_base@std@@QAEXPBV_Container_base@2@@Z 1001b800 f i audioio:audioIO.obj
+ 0002:0000a8c0       ??0?$vector@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z 1001b8c0 f i audioio:audioIO.obj
+ 0002:0000aa10       ?_Orphan_range@?$vector@HV?$allocator@H@std@@@std@@IBEXPAH0@Z 1001ba10 f i audioio:audioIO.obj
+ 0002:0000aaa0       ?max_size@?$allocator@H@std@@QBEIXZ 1001baa0 f i audioio:audioIO.obj
+ 0002:0000aae0       ?capacity@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBEIXZ 1001bae0 f i audioio:audioIO.obj
+ 0002:0000ab30       ?_Ufill@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAEPAUAudioDeviceInfo@@PAU3@IABU3@@Z 1001bb30 f i audioio:audioIO.obj
+ 0002:0000ab70       ?_Orphan_range@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IBEXPAUAudioDeviceInfo@@0@Z 1001bb70 f i audioio:audioIO.obj
+ 0002:0000ac00       ?max_size@?$allocator@UAudioDeviceInfo@@@std@@QBEIXZ 1001bc00 f i audioio:audioIO.obj
+ 0002:0000ac40       ??0?$_Vector_iterator@HV?$allocator@H@std@@@std@@QAE@PAHPBV_Container_base@1@@Z 1001bc40 f i audioio:audioIO.obj
+ 0002:0000ac70       ??9?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QBE_NABV01@@Z 1001bc70 f i audioio:audioIO.obj
+ 0002:0000aca0       ??M?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QBE_NABV01@@Z 1001bca0 f i audioio:audioIO.obj
+ 0002:0000ace0       ??0?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@PAUAudioDeviceInfo@@PBV_Container_base@1@@Z 1001bce0 f i audioio:audioIO.obj
+ 0002:0000ad10       ??Y?$_Vector_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAEAAV01@H@Z 1001bd10 f i audioio:audioIO.obj
+ 0002:0000ad40       ??9?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBE_NABV01@@Z 1001bd40 f i audioio:audioIO.obj
+ 0002:0000ad70       ??M?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBE_NABV01@@Z 1001bd70 f i audioio:audioIO.obj
+ 0002:0000adb0       ?begin@?$vector@HV?$allocator@H@std@@@std@@QBE?AV?$_Vector_const_iterator@HV?$allocator@H@std@@@2@XZ 1001bdb0 f i audioio:audioIO.obj
+ 0002:0000ae00       ?end@?$vector@HV?$allocator@H@std@@@std@@QBE?AV?$_Vector_const_iterator@HV?$allocator@H@std@@@2@XZ 1001be00 f i audioio:audioIO.obj
+ 0002:0000ae50       ??0?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QAE@PAHPBV_Container_base@1@@Z 1001be50 f i audioio:audioIO.obj
+ 0002:0000af40       ??8?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QBE_NABV01@@Z 1001bf40 f i audioio:audioIO.obj
+ 0002:0000af80       ?_Compat@?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QBEXABV12@@Z 1001bf80 f i audioio:audioIO.obj
+ 0002:0000b020       ??0?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAE@PAUAudioDeviceInfo@@PBV_Container_base@1@@Z 1001c020 f i audioio:audioIO.obj
+ 0002:0000b110       ??Y?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QAEAAV01@H@Z 1001c110 f i audioio:audioIO.obj
+ 0002:0000b230       ??8?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBE_NABV01@@Z 1001c230 f i audioio:audioIO.obj
+ 0002:0000b270       ?_Compat@?$_Vector_const_iterator@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@QBEXABV12@@Z 1001c270 f i audioio:audioIO.obj
+ 0002:0000b310       ??0?$_Ranit@HHPBHABH@std@@QAE@XZ 1001c310 f i audioio:audioIO.obj
+ 0002:0000b330       ??0_Iterator_base@std@@QAE@XZ 1001c330 f i audioio:audioIO.obj
+ 0002:0000b360       ??0?$_Ranit@UAudioDeviceInfo@@HPBU1@ABU1@@std@@QAE@XZ 1001c360 f i audioio:audioIO.obj
+ 0002:0000b380       ??$unchecked_copy@PAHPAH@stdext@@YAPAHPAH00@Z 1001c380 f i audioio:audioIO.obj
+ 0002:0000b400       ??$_Ucopy@PAH@?$vector@HV?$allocator@H@std@@@std@@IAEPAHPAH00@Z 1001c400 f i audioio:audioIO.obj
+ 0002:0000b440       ??$_Destroy_range@HV?$allocator@H@std@@@std@@YAXPAH0AAV?$allocator@H@0@@Z 1001c440 f i audioio:audioIO.obj
+ 0002:0000b480       ??$_Allocate@H@std@@YAPAHIPAH@Z 1001c480 f i audioio:audioIO.obj
+ 0002:0000b4e0       ??0bad_alloc@std@@QAE@PBD@Z 1001c4e0 f i audioio:audioIO.obj
+ 0002:0000b510       ??1bad_alloc@std@@UAE@XZ   1001c510 f i audioio:audioIO.obj
+ 0002:0000b540       ??_Gbad_alloc@std@@UAEPAXI@Z 1001c540 f i audioio:audioIO.obj
+ 0002:0000b540       ??_Ebad_alloc@std@@UAEPAXI@Z 1001c540 f i audioio:audioIO.obj
+ 0002:0000b580       ??0bad_alloc@std@@QAE@ABV01@@Z 1001c580 f i audioio:audioIO.obj
+ 0002:0000b5b0       ??$unchecked_copy@PAUAudioDeviceInfo@@PAU1@@stdext@@YAPAUAudioDeviceInfo@@PAU1@00@Z 1001c5b0 f i audioio:audioIO.obj
+ 0002:0000b630       ??$_Destroy_range@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@YAXPAUAudioDeviceInfo@@0AAV?$allocator@UAudioDeviceInfo@@@0@@Z 1001c630 f i audioio:audioIO.obj
+ 0002:0000b670       ??$_Umove@PAUAudioDeviceInfo@@@?$vector@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@IAEPAUAudioDeviceInfo@@PAU2@00@Z 1001c670 f i audioio:audioIO.obj
+ 0002:0000b6b0       ??$fill@PAUAudioDeviceInfo@@U1@@std@@YAXPAUAudioDeviceInfo@@0ABU1@@Z 1001c6b0 f i audioio:audioIO.obj
+ 0002:0000b6f0       ??$_Unchecked_move_backward@PAUAudioDeviceInfo@@PAU1@@stdext@@YAPAUAudioDeviceInfo@@PAU1@00@Z 1001c6f0 f i audioio:audioIO.obj
+ 0002:0000b770       ??$_Allocate@UAudioDeviceInfo@@@std@@YAPAUAudioDeviceInfo@@IPAU1@@Z 1001c770 f i audioio:audioIO.obj
+ 0002:0000b7d0       ??$_Ucopy@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@?$vector@HV?$allocator@H@std@@@std@@IAEPAHV?$_Vector_const_iterator@HV?$allocator@H@std@@@1@0PAH@Z 1001c7d0 f i audioio:audioIO.obj
+ 0002:0000b8b0       ??$unchecked_uninitialized_fill_n@PAUAudioDeviceInfo@@IU1@V?$allocator@UAudioDeviceInfo@@@std@@@stdext@@YAXPAUAudioDeviceInfo@@IABU1@AAV?$allocator@UAudioDeviceInfo@@@std@@@Z 1001c8b0 f i audioio:audioIO.obj
+ 0002:0000b900       ??0?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z 1001c900 f i audioio:audioIO.obj
+ 0002:0000b940       ??0?$_Ranit@HHPBHABH@std@@QAE@ABU01@@Z 1001c940 f i audioio:audioIO.obj
+ 0002:0000b970       ??$_Checked_base@PAH@std@@YAPAHAAPAH@Z 1001c970 f i audioio:audioIO.obj
+ 0002:0000b990       ??$_Iter_random@PAHPAH@std@@YA?AUrandom_access_iterator_tag@0@ABQAH0@Z 1001c990 f i audioio:audioIO.obj
+ 0002:0000b9a0       ??$_Ptr_cat@PAHPAH@std@@YA?AU_Scalar_ptr_iterator_tag@0@AAPAH0@Z 1001c9a0 f i audioio:audioIO.obj
+ 0002:0000b9b0       ??$_Copy_opt@PAHPAHUrandom_access_iterator_tag@std@@@std@@YAPAHPAH00Urandom_access_iterator_tag@0@U_Scalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001c9b0 f i audioio:audioIO.obj
+ 0002:0000ba60       ??$unchecked_uninitialized_copy@PAHPAHV?$allocator@H@std@@@stdext@@YAPAHPAH00AAV?$allocator@H@std@@@Z 1001ca60 f i audioio:audioIO.obj
+ 0002:0000bad0       ??$_Destroy_range@HV?$allocator@H@std@@@std@@YAXPAH0AAV?$allocator@H@0@U_Scalar_ptr_iterator_tag@0@@Z 1001cad0 f i audioio:audioIO.obj
+ 0002:0000bae0       ??$_Checked_base@PAUAudioDeviceInfo@@@std@@YAPAUAudioDeviceInfo@@AAPAU1@@Z 1001cae0 f i audioio:audioIO.obj
+ 0002:0000bb00       ??$_Iter_random@PAUAudioDeviceInfo@@PAU1@@std@@YA?AUrandom_access_iterator_tag@0@ABQAUAudioDeviceInfo@@0@Z 1001cb00 f i audioio:audioIO.obj
+ 0002:0000bb10       ??$_Ptr_cat@PAUAudioDeviceInfo@@PAU1@@std@@YA?AU_Nonscalar_ptr_iterator_tag@0@AAPAUAudioDeviceInfo@@0@Z 1001cb10 f i audioio:audioIO.obj
+ 0002:0000bb20       ??$_Copy_opt@PAUAudioDeviceInfo@@PAU1@@std@@YAPAUAudioDeviceInfo@@PAU1@00Urandom_access_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001cb20 f i audioio:audioIO.obj
+ 0002:0000bb90       ??$_Destroy_range@UAudioDeviceInfo@@V?$allocator@UAudioDeviceInfo@@@std@@@std@@YAXPAUAudioDeviceInfo@@0AAV?$allocator@UAudioDeviceInfo@@@0@U_Nonscalar_ptr_iterator_tag@0@@Z 1001cb90 f i audioio:audioIO.obj
+ 0002:0000bbc0       ??$_Unchecked_uninitialized_move@PAUAudioDeviceInfo@@PAU1@V?$allocator@UAudioDeviceInfo@@@std@@@stdext@@YAPAUAudioDeviceInfo@@PAU1@00AAV?$allocator@UAudioDeviceInfo@@@std@@@Z 1001cbc0 f i audioio:audioIO.obj
+ 0002:0000bc30       ??$_Fill@PAUAudioDeviceInfo@@U1@@std@@YAXPAUAudioDeviceInfo@@0ABU1@@Z 1001cc30 f i audioio:audioIO.obj
+ 0002:0000bc80       ??$_Move_cat@PAUAudioDeviceInfo@@@std@@YA?AU_Undefined_move_tag@0@ABQAUAudioDeviceInfo@@@Z 1001cc80 f i audioio:audioIO.obj
+ 0002:0000bc90       ??$_Move_backward_opt@PAUAudioDeviceInfo@@PAU1@Urandom_access_iterator_tag@std@@U_Undefined_move_tag@3@@std@@YAPAUAudioDeviceInfo@@PAU1@00Urandom_access_iterator_tag@0@U_Undefined_move_tag@0@U_Range_checked_iterator_tag@0@@Z 1001cc90 f i audioio:audioIO.obj
+ 0002:0000bce0       ??$unchecked_uninitialized_copy@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@PAHV?$allocator@H@2@@stdext@@YAPAHV?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@0PAHAAV?$allocator@H@2@@Z 1001cce0 f i audioio:audioIO.obj
+ 0002:0000bdf0       ??$_Uninit_fill_n@PAUAudioDeviceInfo@@IU1@V?$allocator@UAudioDeviceInfo@@@std@@@std@@YAXPAUAudioDeviceInfo@@IABU1@AAV?$allocator@UAudioDeviceInfo@@@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001cdf0 f i audioio:audioIO.obj
+ 0002:0000bee0       ??4AudioDeviceInfo@@QAEAAU0@ABU0@@Z 1001cee0 f i audioio:audioIO.obj
+ 0002:0000bf70       ?construct@?$allocator@UAudioDeviceInfo@@@std@@QAEXPAUAudioDeviceInfo@@ABU3@@Z 1001cf70 f i audioio:audioIO.obj
+ 0002:0000bfa0       ?destroy@?$allocator@UAudioDeviceInfo@@@std@@QAEXPAUAudioDeviceInfo@@@Z 1001cfa0 f i audioio:audioIO.obj
+ 0002:0000bfc0       ??$_Checked_base@PAH@std@@YAPAHAAPAHU_Unchanged_checked_iterator_base_type_tag@0@@Z 1001cfc0 f i audioio:audioIO.obj
+ 0002:0000bfd0       ??$_Debug_range@PAH@std@@YAXPAH0PB_WI@Z 1001cfd0 f i audioio:audioIO.obj
+ 0002:0000c010       ??$_Debug_pointer@H@std@@YAXPAHPB_WI@Z 1001d010 f i audioio:audioIO.obj
+ 0002:0000c040       ??$_Uninit_copy@PAHPAHV?$allocator@H@std@@@std@@YAPAHPAH00AAV?$allocator@H@0@U_Scalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d040 f i audioio:audioIO.obj
+ 0002:0000c0e0       ??$_Checked_base@PAUAudioDeviceInfo@@@std@@YAPAUAudioDeviceInfo@@AAPAU1@U_Unchanged_checked_iterator_base_type_tag@0@@Z 1001d0e0 f i audioio:audioIO.obj
+ 0002:0000c0f0       ??$_Copy_opt@PAUAudioDeviceInfo@@PAU1@Uforward_iterator_tag@std@@@std@@YAPAUAudioDeviceInfo@@PAU1@00Uforward_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d0f0 f i audioio:audioIO.obj
+ 0002:0000c150       ??$_Uninit_move@PAUAudioDeviceInfo@@PAU1@V?$allocator@UAudioDeviceInfo@@@std@@U_Undefined_move_tag@3@@std@@YAPAUAudioDeviceInfo@@PAU1@00AAV?$allocator@UAudioDeviceInfo@@@0@U_Undefined_move_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d150 f i audioio:audioIO.obj
+ 0002:0000c180       ??$_Debug_range@PAUAudioDeviceInfo@@@std@@YAXPAUAudioDeviceInfo@@0PB_WI@Z 1001d180 f i audioio:audioIO.obj
+ 0002:0000c1c0       ??$_Copy_backward_opt@PAUAudioDeviceInfo@@PAU1@@std@@YAPAUAudioDeviceInfo@@PAU1@00Urandom_access_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d1c0 f i audioio:audioIO.obj
+ 0002:0000c230       ??$_Checked_base@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@std@@YA?AV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@AAV10@@Z 1001d230 f i audioio:audioIO.obj
+ 0002:0000c270       ??$_Ptr_cat@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@PAH@std@@YA?AU_Scalar_ptr_iterator_tag@0@AAV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@AAPAH@Z 1001d270 f i audioio:audioIO.obj
+ 0002:0000c280       ??$_Uninit_copy@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@PAHV?$allocator@H@2@@std@@YAPAHV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@0PAHAAV?$allocator@H@0@U_Scalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d280 f i audioio:audioIO.obj
+ 0002:0000c3d0       ??$_Construct@UAudioDeviceInfo@@U1@@std@@YAXPAUAudioDeviceInfo@@ABU1@@Z 1001d3d0 f i audioio:audioIO.obj
+ 0002:0000c470       ??2@YAPAXIPAX@Z            1001d470 f i audioio:audioIO.obj
+ 0002:0000c480       ??3@YAXPAX0@Z              1001d480 f i audioio:audioIO.obj
+ 0002:0000c490       ??$_Destroy@UAudioDeviceInfo@@@std@@YAXPAUAudioDeviceInfo@@@Z 1001d490 f i audioio:audioIO.obj
+ 0002:0000c4b0       ??_GAudioDeviceInfo@@QAEPAXI@Z 1001d4b0 f i audioio:audioIO.obj
+ 0002:0000c4f0       ??D?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QBEABHXZ 1001d4f0 f i audioio:audioIO.obj
+ 0002:0000c5a0       ??G?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QBEHABV01@@Z 1001d5a0 f i audioio:audioIO.obj
+ 0002:0000c5e0       ??$_Iter_cat@PAH@std@@YA?AUrandom_access_iterator_tag@0@ABQAH@Z 1001d5e0 f i audioio:audioIO.obj
+ 0002:0000c5f0       ??$_Debug_range2@PAH@std@@YAXPAH0PB_WIUrandom_access_iterator_tag@0@@Z 1001d5f0 f i audioio:audioIO.obj
+ 0002:0000c660       ??$unchecked_uninitialized_copy@PAUAudioDeviceInfo@@PAU1@V?$allocator@UAudioDeviceInfo@@@std@@@stdext@@YAPAUAudioDeviceInfo@@PAU1@00AAV?$allocator@UAudioDeviceInfo@@@std@@@Z 1001d660 f i audioio:audioIO.obj
+ 0002:0000c6d0       ??$_Iter_cat@PAUAudioDeviceInfo@@@std@@YA?AUrandom_access_iterator_tag@0@ABQAUAudioDeviceInfo@@@Z 1001d6d0 f i audioio:audioIO.obj
+ 0002:0000c6e0       ??$_Debug_range2@PAUAudioDeviceInfo@@@std@@YAXPAUAudioDeviceInfo@@0PB_WIUrandom_access_iterator_tag@0@@Z 1001d6e0 f i audioio:audioIO.obj
+ 0002:0000c750       ??$_Copy_backward_opt@PAUAudioDeviceInfo@@PAU1@Uforward_iterator_tag@std@@@std@@YAPAUAudioDeviceInfo@@PAU1@00Uforward_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d750 f i audioio:audioIO.obj
+ 0002:0000c7b0       ??$_Checked_base@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@std@@YA?AV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@AAV10@U_Unchanged_checked_iterator_base_type_tag@0@@Z 1001d7b0 f i audioio:audioIO.obj
+ 0002:0000c7e0       ??$_Debug_range@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@std@@YAXV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@0PB_WI@Z 1001d7e0 f i audioio:audioIO.obj
+ 0002:0000c8c0       ??$_Uninit_copy@PAUAudioDeviceInfo@@PAU1@V?$allocator@UAudioDeviceInfo@@@std@@@std@@YAPAUAudioDeviceInfo@@PAU1@00AAV?$allocator@UAudioDeviceInfo@@@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 1001d8c0 f i audioio:audioIO.obj
+ 0002:0000c9e0       ??$_Debug_pointer@UAudioDeviceInfo@@@std@@YAXPAUAudioDeviceInfo@@PB_WI@Z 1001d9e0 f i audioio:audioIO.obj
+ 0002:0000ca10       ??$_Iter_cat@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@std@@YA?AUrandom_access_iterator_tag@0@ABV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@@Z 1001da10 f i audioio:audioIO.obj
+ 0002:0000ca20       ??$_Debug_range2@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@std@@YAXV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@0PB_WIUrandom_access_iterator_tag@0@@Z 1001da20 f i audioio:audioIO.obj
+ 0002:0000cb10       ??$_Debug_pointer@V?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@@std@@YAXAAV?$_Vector_const_iterator@HV?$allocator@H@std@@@0@PB_WI@Z 1001db10 f i audioio:audioIO.obj
+ 0002:0000cb20       ??0RtAudio@@QAE@W4RtAudioApi@0@@Z 1001db20 f   audioio:RtAudio.obj
+ 0002:0000cb40       ??0RtAudio@@QAE@HHHHKHPAHHW4RtAudioApi@0@@Z 1001db40 f   audioio:RtAudio.obj
+ 0002:0000cc30       ??0RtAudio@@QAE@HHHHKHPAH0W4RtAudioApi@0@@Z 1001dc30 f   audioio:RtAudio.obj
+ 0002:0000cd20       ??1RtAudio@@QAE@XZ         1001dd20 f   audioio:RtAudio.obj
+ 0002:0000cd60       ?openStream@RtAudio@@QAEXHHHHKHPAHH@Z 1001dd60 f   audioio:RtAudio.obj
+ 0002:0000cda0       ?openStream@RtAudio@@QAEXHHHHKHPAH0@Z 1001dda0 f   audioio:RtAudio.obj
+ 0002:0000cde0       ?initialize@RtAudio@@IAEXW4RtAudioApi@1@@Z 1001dde0 f   audioio:RtAudio.obj
+ 0002:0000d020       ??0RtApi@@QAE@XZ           1001e020 f   audioio:RtAudio.obj
+ 0002:0000d0d0       ??1RtApi@@UAE@XZ           1001e0d0 f   audioio:RtAudio.obj
+ 0002:0000d150       ?openStream@RtApi@@QAEXHHHHKHPAH0@Z 1001e150 f   audioio:RtAudio.obj
+ 0002:0000d1a0       ?openStream@RtApi@@QAEXHHHHKHPAHH@Z 1001e1a0 f   audioio:RtAudio.obj
+ 0002:0000d690       ?getDeviceCount@RtApi@@QAEHXZ 1001e690 f   audioio:RtAudio.obj
+ 0002:0000d6b0       ?getStreamState@RtApi@@QBE?AW4StreamState@1@XZ 1001e6b0 f   audioio:RtAudio.obj
+ 0002:0000d6d0       ?getDeviceInfo@RtApi@@QAE?AURtAudioDeviceInfo@@H@Z 1001e6d0 f   audioio:RtAudio.obj
+ 0002:0000d920       ?getStreamBuffer@RtApi@@QAEQADXZ 1001e920 f   audioio:RtAudio.obj
+ 0002:0000d940       ?getDefaultInputDevice@RtApi@@MAEHXZ 1001e940 f   audioio:RtAudio.obj
+ 0002:0000d950       ?getDefaultOutputDevice@RtApi@@MAEHXZ 1001e950 f   audioio:RtAudio.obj
+ 0002:0000d960       ?closeStream@RtApi@@UAEXXZ 1001e960 f   audioio:RtAudio.obj
+ 0002:0000d970       ?probeDeviceInfo@RtApi@@MAEXPAURtApiDevice@1@@Z 1001e970 f   audioio:RtAudio.obj
+ 0002:0000d980       ?probeDeviceOpen@RtApi@@MAE_NHW4StreamMode@1@HHKPAHH@Z 1001e980 f   audioio:RtAudio.obj
+ 0002:0000d990       ??0RtApiAsio@@QAE@XZ       1001e990 f   audioio:RtAudio.obj
+ 0002:0000da30       ??1RtApiAsio@@UAE@XZ       1001ea30 f   audioio:RtAudio.obj
+ 0002:0000dab0       ?initialize@RtApiAsio@@EAEXXZ 1001eab0 f   audioio:RtAudio.obj
+ 0002:0000dca0       ?probeDeviceInfo@RtApiAsio@@EAEXPAURtApiDevice@RtApi@@@Z 1001eca0 f   audioio:RtAudio.obj
+ 0002:0000e0d0       ?bufferSwitch@@YAXJJ@Z     1001f0d0 f   audioio:RtAudio.obj
+ 0002:0000e170       ?sampleRateChanged@@YAXN@Z 1001f170 f   audioio:RtAudio.obj
+ 0002:0000e230       ?asioMessages@@YAJJJPAXPAN@Z 1001f230 f   audioio:RtAudio.obj
+ 0002:0000e340       ?probeDeviceOpen@RtApiAsio@@EAE_NHW4StreamMode@RtApi@@HHKPAHH@Z 1001f340 f   audioio:RtAudio.obj
+ 0002:0000f560       ?closeStream@RtApiAsio@@UAEXXZ 10020560 f   audioio:RtAudio.obj
+ 0002:0000f680       ?setStreamCallback@RtApiAsio@@UAEXP6AHPADHPAX@Z1@Z 10020680 f   audioio:RtAudio.obj
+ 0002:0000f6f0       ?cancelStreamCallback@RtApiAsio@@UAEXXZ 100206f0 f   audioio:RtAudio.obj
+ 0002:0000f780       ?startStream@RtApiAsio@@UAEXXZ 10020780 f   audioio:RtAudio.obj
+ 0002:0000f850       ?stopStream@RtApiAsio@@UAEXXZ 10020850 f   audioio:RtAudio.obj
+ 0002:0000f900       ?abortStream@RtApiAsio@@UAEXXZ 10020900 f   audioio:RtAudio.obj
+ 0002:0000f920       ?tickStream@RtApiAsio@@UAEXXZ 10020920 f   audioio:RtAudio.obj
+ 0002:0000f9c0       ?callbackEvent@RtApiAsio@@QAEXJ@Z 100209c0 f   audioio:RtAudio.obj
+ 0002:0000fe50       ?error@RtApi@@IAEXW4Type@RtError@@@Z 10020e50 f   audioio:RtAudio.obj
+ 0002:0000ff10       ?verifyStream@RtApi@@IAEXXZ 10020f10 f   audioio:RtAudio.obj
+ 0002:0000ff50       ?clearDeviceInfo@RtApi@@IAEXPAURtApiDevice@1@@Z 10020f50 f   audioio:RtAudio.obj
+ 0002:0000ffc0       ?clearStreamInfo@RtApi@@IAEXXZ 10020fc0 f   audioio:RtAudio.obj
+ 0002:000100a0       ?formatBytes@RtApi@@IAEHK@Z 100210a0 f   audioio:RtAudio.obj
+ 0002:00010120       ?convertBuffer@RtApi@@IAEXPAD0AAUConvertInfo@1@@Z 10021120 f   audioio:RtAudio.obj
+ 0002:000121c0       ?byteSwapBuffer@RtApi@@IAEXPADHK@Z 100231c0 f   audioio:RtAudio.obj
+ 0002:00013970       ??1RtError@@UAE@XZ         10024970 f i audioio:RtAudio.obj
+ 0002:000139a0       ?printMessage@RtError@@UAEXXZ 100249a0 f i audioio:RtAudio.obj
+ 0002:000139f0       ?getType@RtError@@UAEABW4Type@1@XZ 100249f0 f i audioio:RtAudio.obj
+ 0002:00013a10       ?getMessage@RtError@@UAEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ 10024a10 f i audioio:RtAudio.obj
+ 0002:00013a30       ?getMessageString@RtError@@UAEPBDXZ 10024a30 f i audioio:RtAudio.obj
+ 0002:00013a50       ??_ERtError@@UAEPAXI@Z     10024a50 f i audioio:RtAudio.obj
+ 0002:00013a50       ??_GRtError@@UAEPAXI@Z     10024a50 f i audioio:RtAudio.obj
+ 0002:00013a90       ??0RtError@@QAE@ABV0@@Z    10024a90 f i audioio:RtAudio.obj
+ 0002:00013ae0       ??0RtError@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Type@0@@Z 10024ae0 f i audioio:RtAudio.obj
+ 0002:00013b20       ??0RtApiStream@RtApi@@QAE@XZ 10024b20 f i audioio:RtAudio.obj
+ 0002:00013b90       ??0CallbackInfo@@QAE@XZ    10024b90 f i audioio:RtAudio.obj
+ 0002:00013be0       ??0ConvertInfo@RtApi@@QAE@XZ 10024be0 f i audioio:RtAudio.obj
+ 0002:00013c60       ??1ConvertInfo@RtApi@@QAE@XZ 10024c60 f i audioio:RtAudio.obj
+ 0002:00013cd0       ??_ERtApi@@UAEPAXI@Z       10024cd0 f i audioio:RtAudio.obj
+ 0002:00013cd0       ??_GRtApi@@UAEPAXI@Z       10024cd0 f i audioio:RtAudio.obj
+ 0002:00013d10       ??1RtApiStream@RtApi@@QAE@XZ 10024d10 f i audioio:RtAudio.obj
+ 0002:00013d40       ??0RtAudioDeviceInfo@@QAE@ABU0@@Z 10024d40 f i audioio:RtAudio.obj
+ 0002:00013e20       ??_GRtApiAsio@@UAEPAXI@Z   10024e20 f i audioio:RtAudio.obj
+ 0002:00013e20       ??_ERtApiAsio@@UAEPAXI@Z   10024e20 f i audioio:RtAudio.obj
+ 0002:00013e60       ??0RtApiDevice@RtApi@@QAE@XZ 10024e60 f i audioio:RtAudio.obj
+ 0002:00013f60       ??1RtApiDevice@RtApi@@QAE@XZ 10024f60 f i audioio:RtAudio.obj
+ 0002:00013fd0       ??A?$vector@HV?$allocator@H@std@@@std@@QAEAAHI@Z 10024fd0 f i audioio:RtAudio.obj
+ 0002:000140e0       ?push_back@?$vector@HV?$allocator@H@std@@@std@@QAEXABH@Z 100250e0 f i audioio:RtAudio.obj
+ 0002:00014190       ??0?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@XZ 10025190 f i audioio:RtAudio.obj
+ 0002:00014210       ??1?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@XZ 10025210 f i audioio:RtAudio.obj
+ 0002:00014280       ?size@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBEIXZ 10025280 f i audioio:RtAudio.obj
+ 0002:000142d0       ??A?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAEAAURtApiDevice@RtApi@@I@Z 100252d0 f i audioio:RtAudio.obj
+ 0002:000143e0       ?push_back@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAEXABURtApiDevice@RtApi@@@Z 100253e0 f i audioio:RtAudio.obj
+ 0002:00014490       ??1?$_Vector_val@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@XZ 10025490 f i audioio:RtAudio.obj
+ 0002:000144b0       ??1?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@XZ 100254b0 f i audioio:RtAudio.obj
+ 0002:000144d0       ??1?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@XZ 100254d0 f i audioio:RtAudio.obj
+ 0002:000144f0       ??1?$_Ranit@URtApiDevice@RtApi@@HPBU12@ABU12@@std@@QAE@XZ 100254f0 f i audioio:RtAudio.obj
+ 0002:00014510       ?insert@?$vector@HV?$allocator@H@std@@@std@@QAE?AV?$_Vector_iterator@HV?$allocator@H@std@@@2@V32@ABH@Z 10025510 f i audioio:RtAudio.obj
+ 0002:00014680       ?_Ufill@?$vector@HV?$allocator@H@std@@@std@@IAEPAHPAHIABH@Z 10025680 f i audioio:RtAudio.obj
+ 0002:000146c0       ?capacity@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBEIXZ 100256c0 f i audioio:RtAudio.obj
+ 0002:00014710       ?end@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE?AV?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@2@XZ 10025710 f i audioio:RtAudio.obj
+ 0002:00014760       ?insert@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE?AV?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@2@V32@ABURtApiDevice@RtApi@@@Z 10025760 f i audioio:RtAudio.obj
+ 0002:000148d0       ?_Buy@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAE_NI@Z 100258d0 f i audioio:RtAudio.obj
+ 0002:00014970       ?_Tidy@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAEXXZ 10025970 f i audioio:RtAudio.obj
+ 0002:00014a10       ?_Ufill@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAEPAURtApiDevice@RtApi@@PAU34@IABU34@@Z 10025a10 f i audioio:RtAudio.obj
+ 0002:00014a50       ?_Orphan_range@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IBEXPAURtApiDevice@RtApi@@0@Z 10025a50 f i audioio:RtAudio.obj
+ 0002:00014ae0       ??0?$_Vector_val@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAE@V?$allocator@URtApiDevice@RtApi@@@1@@Z 10025ae0 f i audioio:RtAudio.obj
+ 0002:00014b20       ??0?$allocator@URtApiDevice@RtApi@@@std@@QAE@XZ 10025b20 f i audioio:RtAudio.obj
+ 0002:00014b40       ??0?$_Vector_iterator@HV?$allocator@H@std@@@std@@QAE@ABV01@@Z 10025b40 f i audioio:RtAudio.obj
+ 0002:00014b70       ??0?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@ABV01@@Z 10025b70 f i audioio:RtAudio.obj
+ 0002:00014ba0       ??0?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@ABV01@@Z 10025ba0 f i audioio:RtAudio.obj
+ 0002:00014be0       ??0?$_Ranit@URtApiDevice@RtApi@@HPBU12@ABU12@@std@@QAE@ABU01@@Z 10025be0 f i audioio:RtAudio.obj
+ 0002:00014c10       ?_Insert_n@?$vector@HV?$allocator@H@std@@@std@@IAEXV?$_Vector_iterator@HV?$allocator@H@std@@@2@IABH@Z 10025c10 f i audioio:RtAudio.obj
+ 0002:000150c0       ?begin@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE?AV?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@2@XZ 100260c0 f i audioio:RtAudio.obj
+ 0002:00015110       ?max_size@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBEIXZ 10026110 f i audioio:RtAudio.obj
+ 0002:00015130       ?_Destroy@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAEXPAURtApiDevice@RtApi@@0@Z 10026130 f i audioio:RtAudio.obj
+ 0002:00015160       ?_Insert_n@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAEXV?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@2@IABURtApiDevice@RtApi@@@Z 10026160 f i audioio:RtAudio.obj
+ 0002:00015760       ?_Xlen@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@KAXXZ 10026760 f i audioio:RtAudio.obj
+ 0002:000157f0       ??0?$allocator@URtApiDevice@RtApi@@@std@@QAE@ABV01@@Z 100267f0 f i audioio:RtAudio.obj
+ 0002:00015810       ?deallocate@?$allocator@URtApiDevice@RtApi@@@std@@QAEXPAURtApiDevice@RtApi@@I@Z 10026810 f i audioio:RtAudio.obj
+ 0002:00015830       ?allocate@?$allocator@URtApiDevice@RtApi@@@std@@QAEPAURtApiDevice@RtApi@@I@Z 10026830 f i audioio:RtAudio.obj
+ 0002:00015860       ??H?$_Vector_iterator@HV?$allocator@H@std@@@std@@QBE?AV01@H@Z 10026860 f i audioio:RtAudio.obj
+ 0002:00015900       ??G?$_Vector_iterator@HV?$allocator@H@std@@@std@@QBEHABV?$_Vector_const_iterator@HV?$allocator@H@std@@@1@@Z 10026900 f i audioio:RtAudio.obj
+ 0002:00015920       ??0?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@PAURtApiDevice@RtApi@@PBV_Container_base@1@@Z 10026920 f i audioio:RtAudio.obj
+ 0002:00015950       ??H?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBE?AV01@H@Z 10026950 f i audioio:RtAudio.obj
+ 0002:000159f0       ??G?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBEHABV?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@1@@Z 100269f0 f i audioio:RtAudio.obj
+ 0002:00015a10       ??0RtApiDevice@RtApi@@QAE@ABU01@@Z 10026a10 f i audioio:RtAudio.obj
+ 0002:00015b40       ?max_size@?$allocator@URtApiDevice@RtApi@@@std@@QBEIXZ 10026b40 f i audioio:RtAudio.obj
+ 0002:00015b80       ??Y?$_Vector_iterator@HV?$allocator@H@std@@@std@@QAEAAV01@H@Z 10026b80 f i audioio:RtAudio.obj
+ 0002:00015bb0       ??Y?$_Vector_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAEAAV01@H@Z 10026bb0 f i audioio:RtAudio.obj
+ 0002:00015be0       ??0?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAE@PAURtApiDevice@RtApi@@PBV_Container_base@1@@Z 10026be0 f i audioio:RtAudio.obj
+ 0002:00015cd0       ??G?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBEHABV01@@Z 10026cd0 f i audioio:RtAudio.obj
+ 0002:00015d10       ??0?$_Ranit@URtApiDevice@RtApi@@HPBU12@ABU12@@std@@QAE@XZ 10026d10 f i audioio:RtAudio.obj
+ 0002:00015d30       ??Y?$_Vector_const_iterator@HV?$allocator@H@std@@@std@@QAEAAV01@H@Z 10026d30 f i audioio:RtAudio.obj
+ 0002:00015e50       ??Y?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QAEAAV01@H@Z 10026e50 f i audioio:RtAudio.obj
+ 0002:00015f70       ?_Compat@?$_Vector_const_iterator@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@QBEXABV12@@Z 10026f70 f i audioio:RtAudio.obj
+ 0002:00016010       ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@D@Z 10027010 f i audioio:RtAudio.obj
+ 0002:00016380       ??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z 10027380 f i audioio:RtAudio.obj
+ 0002:00016470       ??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ 10027470 f i audioio:RtAudio.obj
+ 0002:000164f0       ??Bsentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QBE_NXZ 100274f0 f i audioio:RtAudio.obj
+ 0002:00016510       ??0_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@AAV12@@Z 10027510 f i audioio:RtAudio.obj
+ 0002:00016580       ??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@XZ 10027580 f i audioio:RtAudio.obj
+ 0002:000165e0       ??$?6U?$char_traits@D@std@@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@PBD@Z 100275e0 f i audioio:RtAudio.obj
+ 0002:00016970       ??$unchecked_uninitialized_fill_n@PAHIHV?$allocator@H@std@@@stdext@@YAXPAHIABHAAV?$allocator@H@std@@@Z 10027970 f i audioio:RtAudio.obj
+ 0002:000169c0       ??$unchecked_uninitialized_fill_n@PAURtApiDevice@RtApi@@IU12@V?$allocator@URtApiDevice@RtApi@@@std@@@stdext@@YAXPAURtApiDevice@RtApi@@IABU12@AAV?$allocator@URtApiDevice@RtApi@@@std@@@Z 100279c0 f i audioio:RtAudio.obj
+ 0002:00016a10       ??$_Umove@PAH@?$vector@HV?$allocator@H@std@@@std@@IAEPAHPAH00@Z 10027a10 f i audioio:RtAudio.obj
+ 0002:00016a50       ??$fill@PAHH@std@@YAXPAH0ABH@Z 10027a50 f i audioio:RtAudio.obj
+ 0002:00016a90       ??$_Unchecked_move_backward@PAHPAH@stdext@@YAPAHPAH00@Z 10027a90 f i audioio:RtAudio.obj
+ 0002:00016b10       ??$_Destroy_range@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@YAXPAURtApiDevice@RtApi@@0AAV?$allocator@URtApiDevice@RtApi@@@0@@Z 10027b10 f i audioio:RtAudio.obj
+ 0002:00016b50       ??$_Umove@PAURtApiDevice@RtApi@@@?$vector@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@IAEPAURtApiDevice@RtApi@@PAU23@00@Z 10027b50 f i audioio:RtAudio.obj
+ 0002:00016b90       ??$fill@PAURtApiDevice@RtApi@@U12@@std@@YAXPAURtApiDevice@RtApi@@0ABU12@@Z 10027b90 f i audioio:RtAudio.obj
+ 0002:00016bd0       ??$_Unchecked_move_backward@PAURtApiDevice@RtApi@@PAU12@@stdext@@YAPAURtApiDevice@RtApi@@PAU12@00@Z 10027bd0 f i audioio:RtAudio.obj
+ 0002:00016c50       ??$_Allocate@URtApiDevice@RtApi@@@std@@YAPAURtApiDevice@RtApi@@IPAU12@@Z 10027c50 f i audioio:RtAudio.obj
+ 0002:00016cb0       ??$_Uninit_fill_n@PAHIHV?$allocator@H@std@@@std@@YAXPAHIABHAAV?$allocator@H@0@U_Scalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 10027cb0 f i audioio:RtAudio.obj
+ 0002:00016cd0       ??$_Ptr_cat@PAURtApiDevice@RtApi@@PAU12@@std@@YA?AU_Nonscalar_ptr_iterator_tag@0@AAPAURtApiDevice@RtApi@@0@Z 10027cd0 f i audioio:RtAudio.obj
+ 0002:00016ce0       ??$_Uninit_fill_n@PAURtApiDevice@RtApi@@IU12@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@YAXPAURtApiDevice@RtApi@@IABU12@AAV?$allocator@URtApiDevice@RtApi@@@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 10027ce0 f i audioio:RtAudio.obj
+ 0002:00016dd0       ??$_Unchecked_uninitialized_move@PAHPAHV?$allocator@H@std@@@stdext@@YAPAHPAH00AAV?$allocator@H@std@@@Z 10027dd0 f i audioio:RtAudio.obj
+ 0002:00016e40       ??$_Fill@PAHH@std@@YAXPAH0ABH@Z 10027e40 f i audioio:RtAudio.obj
+ 0002:00016e90       ??$_Move_cat@PAH@std@@YA?AU_Undefined_move_tag@0@ABQAH@Z 10027e90 f i audioio:RtAudio.obj
+ 0002:00016ea0       ??$_Move_backward_opt@PAHPAHUrandom_access_iterator_tag@std@@U_Undefined_move_tag@2@@std@@YAPAHPAH00Urandom_access_iterator_tag@0@U_Undefined_move_tag@0@U_Range_checked_iterator_tag@0@@Z 10027ea0 f i audioio:RtAudio.obj
+ 0002:00016ef0       ??$_Destroy_range@URtApiDevice@RtApi@@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@YAXPAURtApiDevice@RtApi@@0AAV?$allocator@URtApiDevice@RtApi@@@0@U_Nonscalar_ptr_iterator_tag@0@@Z 10027ef0 f i audioio:RtAudio.obj
+ 0002:00016f20       ??$_Unchecked_uninitialized_move@PAURtApiDevice@RtApi@@PAU12@V?$allocator@URtApiDevice@RtApi@@@std@@@stdext@@YAPAURtApiDevice@RtApi@@PAU12@00AAV?$allocator@URtApiDevice@RtApi@@@std@@@Z 10027f20 f i audioio:RtAudio.obj
+ 0002:00016f90       ??$_Checked_base@PAURtApiDevice@RtApi@@@std@@YAPAURtApiDevice@RtApi@@AAPAU12@@Z 10027f90 f i audioio:RtAudio.obj
+ 0002:00016fb0       ??$_Fill@PAURtApiDevice@RtApi@@U12@@std@@YAXPAURtApiDevice@RtApi@@0ABU12@@Z 10027fb0 f i audioio:RtAudio.obj
+ 0002:00017000       ??$_Iter_random@PAURtApiDevice@RtApi@@PAU12@@std@@YA?AUrandom_access_iterator_tag@0@ABQAURtApiDevice@RtApi@@0@Z 10028000 f i audioio:RtAudio.obj
+ 0002:00017010       ??$_Move_cat@PAURtApiDevice@RtApi@@@std@@YA?AU_Undefined_move_tag@0@ABQAURtApiDevice@RtApi@@@Z 10028010 f i audioio:RtAudio.obj
+ 0002:00017020       ??$_Move_backward_opt@PAURtApiDevice@RtApi@@PAU12@Urandom_access_iterator_tag@std@@U_Undefined_move_tag@4@@std@@YAPAURtApiDevice@RtApi@@PAU12@00Urandom_access_iterator_tag@0@U_Undefined_move_tag@0@U_Range_checked_iterator_tag@0@@Z 10028020 f i audioio:RtAudio.obj
+ 0002:00017070       ??4RtApiDevice@RtApi@@QAEAAU01@ABU01@@Z 10028070 f i audioio:RtAudio.obj
+ 0002:00017150       ?construct@?$allocator@URtApiDevice@RtApi@@@std@@QAEXPAURtApiDevice@RtApi@@ABU34@@Z 10028150 f i audioio:RtAudio.obj
+ 0002:00017180       ?destroy@?$allocator@URtApiDevice@RtApi@@@std@@QAEXPAURtApiDevice@RtApi@@@Z 10028180 f i audioio:RtAudio.obj
+ 0002:000171a0       ??$unchecked_fill_n@PAHIH@stdext@@YAXPAHIABH@Z 100281a0 f i audioio:RtAudio.obj
+ 0002:000171f0       ??$_Uninit_move@PAHPAHV?$allocator@H@std@@U_Undefined_move_tag@2@@std@@YAPAHPAH00AAV?$allocator@H@0@U_Undefined_move_tag@0@U_Range_checked_iterator_tag@0@@Z 100281f0 f i audioio:RtAudio.obj
+ 0002:00017220       ??$_Copy_backward_opt@PAHPAHUrandom_access_iterator_tag@std@@@std@@YAPAHPAH00Urandom_access_iterator_tag@0@U_Scalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 10028220 f i audioio:RtAudio.obj
+ 0002:000172d0       ??$_Uninit_move@PAURtApiDevice@RtApi@@PAU12@V?$allocator@URtApiDevice@RtApi@@@std@@U_Undefined_move_tag@4@@std@@YAPAURtApiDevice@RtApi@@PAU12@00AAV?$allocator@URtApiDevice@RtApi@@@0@U_Undefined_move_tag@0@U_Range_checked_iterator_tag@0@@Z 100282d0 f i audioio:RtAudio.obj
+ 0002:00017300       ??$_Checked_base@PAURtApiDevice@RtApi@@@std@@YAPAURtApiDevice@RtApi@@AAPAU12@U_Unchanged_checked_iterator_base_type_tag@0@@Z 10028300 f i audioio:RtAudio.obj
+ 0002:00017310       ??$_Debug_range@PAURtApiDevice@RtApi@@@std@@YAXPAURtApiDevice@RtApi@@0PB_WI@Z 10028310 f i audioio:RtAudio.obj
+ 0002:00017350       ??$_Copy_backward_opt@PAURtApiDevice@RtApi@@PAU12@@std@@YAPAURtApiDevice@RtApi@@PAU12@00Urandom_access_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 10028350 f i audioio:RtAudio.obj
+ 0002:000173c0       ??$_Construct@URtApiDevice@RtApi@@U12@@std@@YAXPAURtApiDevice@RtApi@@ABU12@@Z 100283c0 f i audioio:RtAudio.obj
+ 0002:00017460       ??$_Destroy@URtApiDevice@RtApi@@@std@@YAXPAURtApiDevice@RtApi@@@Z 10028460 f i audioio:RtAudio.obj
+ 0002:00017480       ??_GRtApiDevice@RtApi@@QAEPAXI@Z 10028480 f i audioio:RtAudio.obj
+ 0002:000174c0       ??$_Fill_n@PAHIH@std@@YAXPAHIABHUrandom_access_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 100284c0 f i audioio:RtAudio.obj
+ 0002:00017510       ??$unchecked_uninitialized_copy@PAURtApiDevice@RtApi@@PAU12@V?$allocator@URtApiDevice@RtApi@@@std@@@stdext@@YAPAURtApiDevice@RtApi@@PAU12@00AAV?$allocator@URtApiDevice@RtApi@@@std@@@Z 10028510 f i audioio:RtAudio.obj
+ 0002:00017580       ??$_Iter_cat@PAURtApiDevice@RtApi@@@std@@YA?AUrandom_access_iterator_tag@0@ABQAURtApiDevice@RtApi@@@Z 10028580 f i audioio:RtAudio.obj
+ 0002:00017590       ??$_Debug_range2@PAURtApiDevice@RtApi@@@std@@YAXPAURtApiDevice@RtApi@@0PB_WIUrandom_access_iterator_tag@0@@Z 10028590 f i audioio:RtAudio.obj
+ 0002:00017600       ??$_Copy_backward_opt@PAURtApiDevice@RtApi@@PAU12@Uforward_iterator_tag@std@@@std@@YAPAURtApiDevice@RtApi@@PAU12@00Uforward_iterator_tag@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 10028600 f i audioio:RtAudio.obj
+ 0002:00017660       ??$_Fill_n@PAHIH@std@@YAXPAHIABHU_Range_checked_iterator_tag@0@@Z 10028660 f i audioio:RtAudio.obj
+ 0002:000176a0       ??$_Uninit_copy@PAURtApiDevice@RtApi@@PAU12@V?$allocator@URtApiDevice@RtApi@@@std@@@std@@YAPAURtApiDevice@RtApi@@PAU12@00AAV?$allocator@URtApiDevice@RtApi@@@0@U_Nonscalar_ptr_iterator_tag@0@U_Range_checked_iterator_tag@0@@Z 100286a0 f i audioio:RtAudio.obj
+ 0002:000177c0       ??$_Debug_pointer@URtApiDevice@RtApi@@@std@@YAXPAURtApiDevice@RtApi@@PB_WI@Z 100287c0 f i audioio:RtAudio.obj
+ 0002:000177f0       ?loadAsioDriver@@YA_NPAD@Z 100287f0 f   audioio:asiodrivers.obj
+ 0002:00017890       ?getAsioDrivers@@YA_NXZ    10028890 f   audioio:asiodrivers.obj
+ 0002:00017a30       ??0AsioDrivers@@QAE@XZ     10028a30 f   audioio:asiodrivers.obj
+ 0002:00017a50       ??1AsioDrivers@@QAE@XZ     10028a50 f   audioio:asiodrivers.obj
+ 0002:00017a70       ?getCurrentDriverName@AsioDrivers@@QAE_NPAD@Z 10028a70 f   audioio:asiodrivers.obj
+ 0002:00017ab0       ?getDriverNames@AsioDrivers@@QAEJPAPADJ@Z 10028ab0 f   audioio:asiodrivers.obj
+ 0002:00017b30       ?loadDriver@AsioDrivers@@QAE_NPAD@Z 10028b30 f   audioio:asiodrivers.obj
+ 0002:00017c60       ?removeCurrentDriver@AsioDrivers@@QAEXXZ 10028c60 f   audioio:asiodrivers.obj
+ 0002:00017dc0       ??_GAsioDrivers@@QAEPAXI@Z 10028dc0 f i audioio:asiodrivers.obj
+ 0002:00017e00       ??0AsioDriverList@@QAE@XZ  10028e00 f   audioio:asiolist.obj
+ 0002:000183d0       ??1AsioDriverList@@QAE@XZ  100293d0 f   audioio:asiolist.obj
+ 0002:00018460       ?asioGetNumDev@AsioDriverList@@QAEJXZ 10029460 f   audioio:asiolist.obj
+ 0002:00018480       ?asioOpenDriver@AsioDriverList@@QAEJHPAPAX@Z 10029480 f   audioio:asiolist.obj
+ 0002:00018550       ?asioCloseDriver@AsioDriverList@@QAEJH@Z 10029550 f   audioio:asiolist.obj
+ 0002:000185c0       ?asioGetDriverName@AsioDriverList@@QAEJHPADH@Z 100295c0 f   audioio:asiolist.obj
+ 0002:00018680       ?asioGetDriverPath@AsioDriverList@@QAEJHPADH@Z 10029680 f   audioio:asiolist.obj
+ 0002:00018700       ?asioGetDriverCLSID@AsioDriverList@@QAEJHPAU_GUID@@@Z 10029700 f   audioio:asiolist.obj
+ 0002:000189c0       ?ASIOInit@@YAJPAUASIODriverInfo@@@Z 100299c0 f   audioio:asio.obj
+ 0002:00018a90       ?ASIOExit@@YAJXZ           10029a90 f   audioio:asio.obj
+ 0002:00018ac0       ?ASIOStart@@YAJXZ          10029ac0 f   audioio:asio.obj
+ 0002:00018af0       ?ASIOStop@@YAJXZ           10029af0 f   audioio:asio.obj
+ 0002:00018b20       ?ASIOGetChannels@@YAJPAJ0@Z 10029b20 f   audioio:asio.obj
+ 0002:00018b70       ?ASIOGetLatencies@@YAJPAJ0@Z 10029b70 f   audioio:asio.obj
+ 0002:00018bc0       ?ASIOGetBufferSize@@YAJPAJ000@Z 10029bc0 f   audioio:asio.obj
+ 0002:00018c20       ?ASIOCanSampleRate@@YAJN@Z 10029c20 f   audioio:asio.obj
+ 0002:00018c50       ?ASIOGetSampleRate@@YAJPAN@Z 10029c50 f   audioio:asio.obj
+ 0002:00018c80       ?ASIOSetSampleRate@@YAJN@Z 10029c80 f   audioio:asio.obj
+ 0002:00018cb0       ?ASIOGetClockSources@@YAJPAUASIOClockSource@@PAJ@Z 10029cb0 f   audioio:asio.obj
+ 0002:00018cf0       ?ASIOSetClockSource@@YAJJ@Z 10029cf0 f   audioio:asio.obj
+ 0002:00018d20       ?ASIOGetSamplePosition@@YAJPAUASIOSamples@@PAUASIOTimeStamp@@@Z 10029d20 f   audioio:asio.obj
+ 0002:00018d50       ?ASIOGetChannelInfo@@YAJPAUASIOChannelInfo@@@Z 10029d50 f   audioio:asio.obj
+ 0002:00018db0       ?ASIOCreateBuffers@@YAJPAUASIOBufferInfo@@JJPAUASIOCallbacks@@@Z 10029db0 f   audioio:asio.obj
+ 0002:00018e30       ?ASIODisposeBuffers@@YAJXZ 10029e30 f   audioio:asio.obj
+ 0002:00018e60       ?ASIOControlPanel@@YAJXZ   10029e60 f   audioio:asio.obj
+ 0002:00018e90       ?ASIOFuture@@YAJJPAX@Z     10029e90 f   audioio:asio.obj
+ 0002:00018ec0       ?ASIOOutputReady@@YAJXZ    10029ec0 f   audioio:asio.obj
+ 0002:00019030       __RTC_CheckEsp             1002a030 f   MSVCRTD:stack.obj
+ 0002:00019060       @_RTC_CheckStackVars@8     1002a060 f   MSVCRTD:stack.obj
+ 0002:000190e0       @_RTC_AllocaHelper@12      1002a0e0 f   MSVCRTD:stack.obj
+ 0002:00019120       @_RTC_CheckStackVars2@12   1002a120 f   MSVCRTD:stack.obj
+ 0002:00019230       __RTC_InitBase             1002a230 f   MSVCRTD:init.obj
+ 0002:00019270       __RTC_Shutdown             1002a270 f   MSVCRTD:init.obj
+ 0002:00019290       _cos                       1002a290 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019296       _strcmp                    1002a296 f   MSVCRTD:MSVCR80D.dll
+ 0002:000192a0       __ftol2_sse                1002a2a0 f   MSVCRTD:ftol2.obj
+ 0002:000192a9       __ftol2_pentium4           1002a2a9 f   MSVCRTD:ftol2.obj
+ 0002:000192bc       __ftol2_sse_excpt          1002a2bc f   MSVCRTD:ftol2.obj
+ 0002:000192d6       __ftol2                    1002a2d6 f   MSVCRTD:ftol2.obj
+ 0002:00019376       _printf                    1002a376 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001937c       _sqrt                      1002a37c f   MSVCRTD:MSVCR80D.dll
+ 0002:00019382       _pow                       1002a382 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019390       __alloca_probe             1002a390     MSVCRTD:chkstk.obj
+ 0002:00019390       __chkstk                   1002a390 f   MSVCRTD:chkstk.obj
+ 0002:000193c6       _fabs                      1002a3c6 f   MSVCRTD:MSVCR80D.dll
+ 0002:000193cc       _log                       1002a3cc f   MSVCRTD:MSVCR80D.dll
+ 0002:000193d2       _atan2                     1002a3d2 f   MSVCRTD:MSVCR80D.dll
+ 0002:000193d8       _floor                     1002a3d8 f   MSVCRTD:MSVCR80D.dll
+ 0002:000193e0       __onexit                   1002a3e0 f   MSVCRTD:atonexit.obj
+ 0002:00019530       _atexit                    1002a530 f   MSVCRTD:atonexit.obj
+ 0002:00019550       __invalid_parameter        1002a550 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019556       __CrtDbgReportW            1002a556 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019600       __CRT_INIT@12              1002a600 f   MSVCRTD:crtdll.obj
+ 0002:000198d0       _NtCurrentTeb              1002a8d0 f i MSVCRTD:crtdll.obj
+ 0002:000198e0       __DllMainCRTStartup@12     1002a8e0 f   MSVCRTD:crtdll.obj
+ 0002:00019b40       ??3@YAXPAX@Z               1002ab40 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019b46       ??2@YAPAXI@Z               1002ab46 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019b4c       ___CxxFrameHandler3        1002ab4c f   MSVCRTD:MSVCR80D.dll
+ 0002:00019b60       @__security_check_cookie@4 1002ab60 f   MSVCRTD:secchk.obj
+ 0002:00019b80       ??0type_info@@AAE@ABV0@@Z  1002ab80 f   MSVCRTD:ti_inst.obj
+ 0002:00019ba0       ??_Etype_info@@UAEPAXI@Z   1002aba0 f i MSVCRTD:ti_inst.obj
+ 0002:00019c30       ??4type_info@@AAEAAV0@ABV0@@Z 1002ac30 f   MSVCRTD:ti_inst.obj
+ 0002:00019c44       __CxxThrowException@8      1002ac44 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c4a       ??0exception@std@@QAE@ABV01@@Z 1002ac4a f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c50       ??1exception@std@@UAE@XZ   1002ac50 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c56       ??0exception@std@@QAE@XZ   1002ac56 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c5c       ??0exception@std@@QAE@ABQBD@Z 1002ac5c f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c62       ?what@exception@std@@UBEPBDXZ 1002ac62 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c68       _memmove_s                 1002ac68 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c6e       __purecall                 1002ac6e f   MSVCRTD:MSVCR80D.dll
+ 0002:00019c80       ??_L@YGXPAXIHP6EX0@Z1@Z    1002ac80 f   MSVCRTD:ehvecctr.obj
+ 0002:00019d60       ??_M@YGXPAXIHP6EX0@Z@Z     1002ad60 f   MSVCRTD:ehvecdtr.obj
+ 0002:00019e40       ?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z 1002ae40 f   MSVCRTD:ehvecdtr.obj
+ 0002:00019f28       _sprintf                   1002af28 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f2e       _strlen                    1002af2e f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f34       _fprintf                   1002af34 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f3a       ___iob_func                1002af3a f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f40       _malloc                    1002af40 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f46       _free                      1002af46 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f4c       _calloc                    1002af4c f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f52       _log10                     1002af52 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f58       _memcpy                    1002af58 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f5e       _memset                    1002af5e f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f64       _strcpy                    1002af64 f   MSVCRTD:MSVCR80D.dll
+ 0002:00019f70       _DebuggerKnownHandle       1002af70 f   MSVCRTD:error.obj
+ 0002:0001a040       ?_RTC_Failure@@YAXPAXH@Z   1002b040 f   MSVCRTD:error.obj
+ 0002:0001a440       ?_RTC_StackFailure@@YAXPAXPBD@Z 1002b440 f   MSVCRTD:error.obj
+ 0002:0001a5b0       ?_RTC_AllocaFailure@@YAXPAXPAU_RTC_ALLOCA_NODE@@H@Z 1002b5b0 f   MSVCRTD:error.obj
+ 0002:0001a7c0       __RTC_UninitUse            1002b7c0 f   MSVCRTD:error.obj
+ 0002:0001a910       __RTC_NumErrors            1002b910 f   MSVCRTD:userapi.obj
+ 0002:0001a920       __RTC_GetErrDesc           1002b920 f   MSVCRTD:userapi.obj
+ 0002:0001a940       __RTC_SetErrorType         1002b940 f   MSVCRTD:userapi.obj
+ 0002:0001a970       __RTC_SetErrorFunc         1002b970 f   MSVCRTD:userapi.obj
+ 0002:0001a9a0       __RTC_SetErrorFuncW        1002b9a0 f   MSVCRTD:userapi.obj
+ 0002:0001a9d0       ?_RTC_GetErrorFunc@@YAP6AHHPBDH00ZZPBX@Z 1002b9d0 f   MSVCRTD:userapi.obj
+ 0002:0001a9e0       ?_RTC_GetErrorFuncW@@YAP6AHHPB_WH00ZZPBX@Z 1002b9e0 f   MSVCRTD:userapi.obj
+ 0002:0001a9e6       __CRT_RTC_INITW            1002b9e6 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001a9f0       __get_sse2_info            1002b9f0 f   MSVCRTD:cpu_disp.obj
+ 0002:0001ab60       ___sse2_available_init     1002bb60 f   MSVCRTD:cpu_disp.obj
+ 0002:0001ab76       __unlock                   1002bb76 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ab7c       ___dllonexit               1002bb7c f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ab82       __encode_pointer           1002bb82 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ab88       __lock                     1002bb88 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ab8e       __decode_pointer           1002bb8e f   MSVCRTD:MSVCR80D.dll
+ 0002:0001aba0       __except_handler4          1002bba0 f   MSVCRTD:chandler4gs.obj
+ 0002:0001abd0       ___clean_type_info_names   1002bbd0 f   MSVCRTD:tncleanup.obj
+ 0002:0001abf0       __RTC_Initialize           1002bbf0 f   MSVCRTD:initsect.obj
+ 0002:0001ac20       __RTC_Terminate            1002bc20 f   MSVCRTD:initsect.obj
+ 0002:0001ac4e       __malloc_dbg               1002bc4e f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ac54       __free_dbg                 1002bc54 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ac5a       __encoded_null             1002bc5a f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ac60       __CrtSetCheckCount         1002bc60 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001ac70       __ValidateImageBase        1002bc70 f   MSVCRTD:pesect.obj
+ 0002:0001acf0       __FindPESection            1002bcf0 f   MSVCRTD:pesect.obj
+ 0002:0001ad80       __IsNonwritableInCurrentImage 1002bd80 f   MSVCRTD:pesect.obj
+ 0002:0001aed4       __initterm                 1002bed4 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001aeda       __initterm_e               1002beda f   MSVCRTD:MSVCR80D.dll
+ 0002:0001aee0       __amsg_exit                1002bee0 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001aef0       ___security_init_cookie    1002bef0 f   MSVCRTD:gs_support.obj
+ 0002:0001b000       ___CppXcptFilter           1002c000 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b010       _DllMain@12                1002c010 f   MSVCRTD:dllmain.obj
+ 0002:0001b040       ___report_gsfailure        1002c040 f   MSVCRTD:gs_report.obj
+ 0002:0001b190       ?terminate@@YAXXZ          1002c190 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b1a0       ?_RTC_GetSrcLine@@YAHPAEPA_WKPAH1K@Z 1002c1a0 f   MSVCRTD:pdblkup.obj
+ 0002:0001b74c       __except_handler4_common   1002c74c f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b752       ___clean_type_info_names_internal 1002c752 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b758       __crt_debugger_hook        1002c758 f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b75e       ??1type_info@@UAE@XZ       1002c75e f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b75e       ?_type_info_dtor_internal_method@type_info@@QAEXXZ 1002c75e f   MSVCRTD:MSVCR80D.dll
+ 0002:0001b764       ?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ 1002c764 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b76a       ?_Debug_message@std@@YAXPB_W0I@Z 1002c76a f   msvcprtd:MSVCP80D.dll
+ 0002:0001b770       ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@ABV01@@Z 1002c770 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b776       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ 1002c776 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b77c       ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@U_Has_debug_it@01@@Z 1002c77c f   msvcprtd:MSVCP80D.dll
+ 0002:0001b782       ?_Orphan_all@_Container_base@std@@QBEXXZ 1002c782 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b788       ??1_Container_base@std@@QAE@XZ 1002c788 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b78e       ??0_Container_base@std@@QAE@XZ 1002c78e f   msvcprtd:MSVCP80D.dll
+ 0002:0001b794       ??1_Lockit@std@@QAE@XZ     1002c794 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b79a       ??0_Lockit@std@@QAE@H@Z    1002c79a f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7a0       ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z 1002c7a0 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7a6       ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV01@@Z 1002c7a6 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7ac       ??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z 1002c7ac f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7b2       ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z 1002c7b2 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7b8       ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@@Z 1002c7b8 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7be       ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z 1002c7be f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7c4       ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z 1002c7c4 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7ca       ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z 1002c7ca f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7d0       ?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z 1002c7d0 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7d6       ?width@ios_base@std@@QAEHH@Z 1002c7d6 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7dc       ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z 1002c7dc f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7e2       ?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z 1002c7e2 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7e8       ?eof@?$char_traits@D@std@@SAHXZ 1002c7e8 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7ee       ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z 1002c7ee f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7f4       ?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ 1002c7f4 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b7fa       ?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ 1002c7fa f   msvcprtd:MSVCP80D.dll
+ 0002:0001b800       ?flags@ios_base@std@@QBEHXZ 1002c800 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b806       ?width@ios_base@std@@QBEHXZ 1002c806 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b80c       ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ 1002c80c f   msvcprtd:MSVCP80D.dll
+ 0002:0001b812       ?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ 1002c812 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b818       ?good@ios_base@std@@QBE_NXZ 1002c818 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b81e       ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ 1002c81e f   msvcprtd:MSVCP80D.dll
+ 0002:0001b824       ?uncaught_exception@std@@YA_NXZ 1002c824 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b82a       ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEXXZ 1002c82a f   msvcprtd:MSVCP80D.dll
+ 0002:0001b830       ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEXXZ 1002c830 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b836       ?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHPBDH@Z 1002c836 f   msvcprtd:MSVCP80D.dll
+ 0002:0001b83c       ?length@?$char_traits@D@std@@SAIPBD@Z 1002c83c f   msvcprtd:MSVCP80D.dll
+ 0002:0001b842       _GetForegroundWindow@0     1002c842 f   user32:USER32.dll
+ 0002:0001b848       _CharLowerBuffA@8          1002c848 f   user32:USER32.dll
+ 0002:0001b84e       _RegCloseKey@4             1002c84e f   advapi32:ADVAPI32.dll
+ 0002:0001b854       _RegEnumKeyA@16            1002c854 f   advapi32:ADVAPI32.dll
+ 0002:0001b85a       _RegOpenKeyA@12            1002c85a f   advapi32:ADVAPI32.dll
+ 0002:0001b860       _RegQueryValueExA@24       1002c860 f   advapi32:ADVAPI32.dll
+ 0002:0001b866       _RegOpenKeyExA@20          1002c866 f   advapi32:ADVAPI32.dll
+ 0002:0001b86c       _CoUninitialize@0          1002c86c f   ole32:ole32.dll
+ 0002:0001b872       _CoInitialize@4            1002c872 f   ole32:ole32.dll
+ 0002:0001b878       _CLSIDFromString@8         1002c878 f   ole32:ole32.dll
+ 0002:0001b87e       _CoCreateInstance@20       1002c87e f   ole32:ole32.dll
+ 0002:0001b884       _InitializeCriticalSection@4 1002c884 f   kernel32:KERNEL32.dll
+ 0002:0001b88a       _DeleteCriticalSection@4   1002c88a f   kernel32:KERNEL32.dll
+ 0002:0001b890       _CloseHandle@4             1002c890 f   kernel32:KERNEL32.dll
+ 0002:0001b896       _CreateEventA@16           1002c896 f   kernel32:KERNEL32.dll
+ 0002:0001b89c       _LeaveCriticalSection@4    1002c89c f   kernel32:KERNEL32.dll
+ 0002:0001b8a2       _EnterCriticalSection@4    1002c8a2 f   kernel32:KERNEL32.dll
+ 0002:0001b8a8       _ResetEvent@4              1002c8a8 f   kernel32:KERNEL32.dll
+ 0002:0001b8ae       _WaitForMultipleObjects@16 1002c8ae f   kernel32:KERNEL32.dll
+ 0002:0001b8b4       _SetEvent@4                1002c8b4 f   kernel32:KERNEL32.dll
+ 0002:0001b8ba       _MultiByteToWideChar@24    1002c8ba f   kernel32:KERNEL32.dll
+ 0002:0001b8c0       _OpenFile@12               1002c8c0 f   kernel32:KERNEL32.dll
+ 0002:0001b8c6       _InterlockedExchange@8     1002c8c6 f   kernel32:KERNEL32.dll
+ 0002:0001b8cc       _Sleep@4                   1002c8cc f   kernel32:KERNEL32.dll
+ 0002:0001b8d2       _InterlockedCompareExchange@12 1002c8d2 f   kernel32:KERNEL32.dll
+ 0002:0001b8d8       _RaiseException@16         1002c8d8 f   kernel32:KERNEL32.dll
+ 0002:0001b8de       _DebugBreak@0              1002c8de f   kernel32:KERNEL32.dll
+ 0002:0001b8e4       _WideCharToMultiByte@32    1002c8e4 f   kernel32:KERNEL32.dll
+ 0002:0001b8ea       _IsDebuggerPresent@0       1002c8ea f   kernel32:KERNEL32.dll
+ 0002:0001b8f0       _lstrlenA@4                1002c8f0 f   kernel32:KERNEL32.dll
+ 0002:0001b8f6       _GetProcAddress@8          1002c8f6 f   kernel32:KERNEL32.dll
+ 0002:0001b8fc       _LoadLibraryA@4            1002c8fc f   kernel32:KERNEL32.dll
+ 0002:0001b902       _QueryPerformanceCounter@4 1002c902 f   kernel32:KERNEL32.dll
+ 0002:0001b908       _GetTickCount@0            1002c908 f   kernel32:KERNEL32.dll
+ 0002:0001b90e       _GetCurrentThreadId@0      1002c90e f   kernel32:KERNEL32.dll
+ 0002:0001b914       _GetCurrentProcessId@0     1002c914 f   kernel32:KERNEL32.dll
+ 0002:0001b91a       _GetSystemTimeAsFileTime@4 1002c91a f   kernel32:KERNEL32.dll
+ 0002:0001b920       _DisableThreadLibraryCalls@4 1002c920 f   kernel32:KERNEL32.dll
+ 0002:0001b926       _TerminateProcess@8        1002c926 f   kernel32:KERNEL32.dll
+ 0002:0001b92c       _GetCurrentProcess@0       1002c92c f   kernel32:KERNEL32.dll
+ 0002:0001b932       _UnhandledExceptionFilter@4 1002c932 f   kernel32:KERNEL32.dll
+ 0002:0001b938       _SetUnhandledExceptionFilter@4 1002c938 f   kernel32:KERNEL32.dll
+ 0002:0001b93e       _HeapFree@12               1002c93e f   kernel32:KERNEL32.dll
+ 0002:0001b944       _HeapAlloc@12              1002c944 f   kernel32:KERNEL32.dll
+ 0002:0001b94a       _GetProcessHeap@0          1002c94a f   kernel32:KERNEL32.dll
+ 0002:0001b950       _GetModuleFileNameW@12     1002c950 f   kernel32:KERNEL32.dll
+ 0002:0001b956       _VirtualQuery@12           1002c956 f   kernel32:KERNEL32.dll
+ 0002:0001b95c       _FreeLibrary@4             1002c95c f   kernel32:KERNEL32.dll
+ 0003:00000000       ___xc_a                    10032000     MSVCRTD:cinitexe.obj
+ 0003:00000208       ___xc_z                    10032208     MSVCRTD:cinitexe.obj
+ 0003:0000030c       ___xi_a                    1003230c     MSVCRTD:cinitexe.obj
+ 0003:00000618       ___xi_z                    10032618     MSVCRTD:cinitexe.obj
+ 0003:0000073c       ??_C@_09IIMKIKAI@bdownsamp?$AA@ 1003273c     ConstShift.obj
+ 0003:00000748       ??_C@_07LFOKAMLJ@bweigth?$AA@ 10032748     ConstShift.obj
+ 0003:00000754       ??_C@_08JPOALNFN@brecmore?$AA@ 10032754     ConstShift.obj
+ 0003:00000760       ??_C@_07MAOOCAOO@brecord?$AA@ 10032760     ConstShift.obj
+ 0003:0000076c       ??_C@_09CANIJKA@brelative?$AA@ 1003276c     ConstShift.obj
+ 0003:00000778       ??_C@_06CCBJNGEG@btrack?$AA@ 10032778     ConstShift.obj
+ 0003:00000780       ??_C@_06BLGJINEH@bshift?$AA@ 10032780     ConstShift.obj
+ 0003:00000788       ??_C@_0L@MDOMCOJK@bgainadapt?$AA@ 10032788     ConstShift.obj
+ 0003:00000798       ??_C@_04OEJLJOMN@dev2?$AA@ 10032798     ConstShift.obj
+ 0003:000007a0       ??_C@_04MPLGMNAO@dev1?$AA@ 100327a0     ConstShift.obj
+ 0003:000007a8       ??_C@_05GPACDFKL@rmsff?$AA@ 100327a8     ConstShift.obj
+ 0003:000007b0       ??_C@_08PCELDNOF@rmsratio?$AA@ 100327b0     ConstShift.obj
+ 0003:000007bc       ??_C@_06KMOMNBDP@rmsthr?$AA@ 100327bc     ConstShift.obj
+ 0003:000007c4       ??_C@_06PKALICOJ@preemp?$AA@ 100327c4     ConstShift.obj
+ 0003:000007cc       ??_C@_05MHMEBBGO@scale?$AA@ 100327cc     ConstShift.obj
+ 0003:000007d4       ??_C@_08JOKJNCGB@downfact?$AA@ 100327d4     ConstShift.obj
+ 0003:000007e0       ??_C@_08NNGGCBAN@pitchlen?$AA@ 100327e0     ConstShift.obj
+ 0003:000007ec       ??_C@_0M@PAIFHIAB@mintranslen?$AA@ 100327ec     ConstShift.obj
+ 0003:000007fc       ??_C@_07MMCAMCAJ@ntracks?$AA@ 100327fc     ConstShift.obj
+ 0003:00000808       ??_C@_05PEBHHHPM@nfmts?$AA@ 10032808     ConstShift.obj
+ 0003:00000810       ??_C@_04HEAONJEB@nlpc?$AA@ 10032810     ConstShift.obj
+ 0003:00000818       ??_C@_04FFEPOPGN@nwin?$AA@ 10032818     ConstShift.obj
+ 0003:00000820       ??_C@_06LNLFIJFL@ndelay?$AA@ 10032820     ConstShift.obj
+ 0003:00000828       ??_C@_08NEBBCBCD@framelen?$AA@ 10032828     ConstShift.obj
+ 0003:00000834       ??_C@_05IIHBFNJE@srate?$AA@ 10032834     ConstShift.obj
+ 0003:00000840       __real@3eee1ef8ff21cae5    10032840     ConstShift.obj
+ 0003:00000850       __real@bf22db25cf24f0b0    10032850     ConstShift.obj
+ 0003:00000860       __real@3f60e13d9f174f35    10032860     ConstShift.obj
+ 0003:00000870       __real@bf94044ae8131cde    10032870     ConstShift.obj
+ 0003:00000880       __real@3fc18552687731ea    10032880     ConstShift.obj
+ 0003:00000890       __real@bfe758d7d6987ec2    10032890     ConstShift.obj
+ 0003:000008a0       __real@4008a4278b42939b    100328a0     ConstShift.obj
+ 0003:000008b0       __real@c025130dbddd4b00    100328b0     ConstShift.obj
+ 0003:000008c0       __real@403db482def1e6ae    100328c0     ConstShift.obj
+ 0003:000008d0       __real@c0516f40408d07cb    100328d0     ConstShift.obj
+ 0003:000008e0       __real@4061285208f8ef36    100328e0     ConstShift.obj
+ 0003:000008f0       __real@c06c653335a07111    100328f0     ConstShift.obj
+ 0003:00000900       __real@4073c0ddd698b514    10032900     ConstShift.obj
+ 0003:00000910       __real@c07704e47d791cac    10032910     ConstShift.obj
+ 0003:00000920       __real@40764c17ae0c25be    10032920     ConstShift.obj
+ 0003:00000930       __real@c071b9245a9bf6eb    10032930     ConstShift.obj
+ 0003:00000940       __real@4066a832d1bc0f8b    10032940     ConstShift.obj
+ 0003:00000950       __real@c0568c616be78db2    10032950     ConstShift.obj
+ 0003:00000960       __real@40408b14d3b5de6f    10032960     ConstShift.obj
+ 0003:00000970       __real@c0201beb3219ce05    10032970     ConstShift.obj
+ 0003:00000980       __real@3f6a46a00fe3a43c    10032980     ConstShift.obj
+ 0003:00000990       __real@bf8ed373717186c1    10032990     ConstShift.obj
+ 0003:000009a0       __real@3fa71dd84fc0ac9a    100329a0     ConstShift.obj
+ 0003:000009b0       __real@bfb73acab873f4f4    100329b0     ConstShift.obj
+ 0003:000009c0       __real@3fc26f27834bab7c    100329c0     ConstShift.obj
+ 0003:000009d0       __real@bfc6c0f57d6f790c    100329d0     ConstShift.obj
+ 0003:000009e0       __real@3fc7bc2b79b5c028    100329e0     ConstShift.obj
+ 0003:000009f0       __real@bfc417713fd35210    100329f0     ConstShift.obj
+ 0003:00000a00       __real@3fbee9860a8d9300    10032a00     ConstShift.obj
+ 0003:00000a10       __real@bfb51f4052af34a0    10032a10     ConstShift.obj
+ 0003:00000a20       __real@3fb2cf93dac1af88    10032a20     ConstShift.obj
+ 0003:00000a30       __real@bfb51f4052af3710    10032a30     ConstShift.obj
+ 0003:00000a40       __real@3fbee9860a8d9e2d    10032a40     ConstShift.obj
+ 0003:00000a50       __real@bfc417713fd348b4    10032a50     ConstShift.obj
+ 0003:00000a60       __real@3fc7bc2b79b59043    10032a60     ConstShift.obj
+ 0003:00000a70       __real@bfc6c0f57d6f330c    10032a70     ConstShift.obj
+ 0003:00000a80       __real@3fc26f27834b89eb    10032a80     ConstShift.obj
+ 0003:00000a90       __real@bfb73acab87451df    10032a90     ConstShift.obj
+ 0003:00000aa0       __real@3fa71dd84fc14eac    10032aa0     ConstShift.obj
+ 0003:00000ab0       __real@bf8ed3737170ede7    10032ab0     ConstShift.obj
+ 0003:00000ac0       __real@3f6a46a00fdf0a93    10032ac0     ConstShift.obj
+ 0003:00000ad0       __real@3fee666666666666    10032ad0     ConstShift.obj
+ 0003:00000ae0       __real@0000000000000000    10032ae0     ConstShift.obj
+ 0003:00000af0       __real@3fb999999999999a    10032af0     ConstShift.obj
+ 0003:00000b00       __real@4059000000000000    10032b00     ConstShift.obj
+ 0003:00000b10       __real@3ff0000000000000    10032b10     ConstShift.obj
+ 0003:00000b20       __real@3fef5c28f5c28f5c    10032b20     ConstShift.obj
+ 0003:00000b30       __real@3feccccccccccccd    10032b30     ConstShift.obj
+ 0003:00000b40       __real@3ff4cccccccccccd    10032b40     ConstShift.obj
+ 0003:00000b50       __real@3f947ae147ae147b    10032b50     ConstShift.obj
+ 0003:00000b60       __real@3fe0000000000000    10032b60     ConstShift.obj
+ 0003:00000b70       __real@401921fb54442d18    10032b70     ConstShift.obj
+ 0003:00000b80       __real@408f400000000000    10032b80     ConstShift.obj
+ 0003:00000b8c       ??_C@_0BN@OPMAKBKI@ALGO?3?5Unknown?5parameter?3?5?$CFs?6?$AA@ 10032b8c     ConstShift.obj
+ 0003:00000bb0       ??_C@_0BJ@EALBBBHN@ALGO?3?5Getting?5param?3?5?$CFs?6?$AA@ 10032bb0     ConstShift.obj
+ 0003:00000bd0       __real@4024000000000000    10032bd0     ConstShift.obj
+ 0003:00000be0       __real@400921fb54442d18    10032be0     ConstShift.obj
+ 0003:00000bf0       __real@3e7ad7f29abcaf48    10032bf0     ConstShift.obj
+ 0003:00000c00       __real@4000000000000000    10032c00     ConstShift.obj
+ 0003:00000c10       __real@bfdc000000000000    10032c10     ConstShift.obj
+ 0003:00000c20       __real@3fe8000000000000    10032c20     ConstShift.obj
+ 0003:00000c30       __real@416312d000000000    10032c30     ConstShift.obj
+ 0003:00000c40       __real@40a3880000000000    10032c40     ConstShift.obj
+ 0003:00000c50       __real@4085e00000000000    10032c50     ConstShift.obj
+ 0003:00000c60       __real@40bb580000000000    10032c60     ConstShift.obj
+ 0003:00000c70       __real@40b3880000000000    10032c70     ConstShift.obj
+ 0003:00000c80       __real@40b1940000000000    10032c80     ConstShift.obj
+ 0003:00000c90       __real@40ab580000000000    10032c90     ConstShift.obj
+ 0003:00000ca0       __real@4097700000000000    10032ca0     ConstShift.obj
+ 0003:00000cb0       __real@40a7700000000000    10032cb0     ConstShift.obj
+ 0003:00000cc0       __real@409f400000000000    10032cc0     ConstShift.obj
+ 0003:00000cd0       __real@4092c00000000000    10032cd0     ConstShift.obj
+ 0003:00000ce0       __real@4075e00000000000    10032ce0     ConstShift.obj
+ 0003:00000cf0       __real@c000000000000000    10032cf0     ConstShift.obj
+ 0003:00000cfc       ??_C@_0P@GHFPNOJB@bad?5allocation?$AA@ 10032cfc     mexLibrary.obj
+ 0003:00000d10       ?collate@?$_Locbase@H@std@@2HB 10032d10     mexLibrary.obj
+ 0003:00000d14       ?ctype@?$_Locbase@H@std@@2HB 10032d14     mexLibrary.obj
+ 0003:00000d18       ?monetary@?$_Locbase@H@std@@2HB 10032d18     mexLibrary.obj
+ 0003:00000d1c       ?numeric@?$_Locbase@H@std@@2HB 10032d1c     mexLibrary.obj
+ 0003:00000d20       ?time@?$_Locbase@H@std@@2HB 10032d20     mexLibrary.obj
+ 0003:00000d24       ?messages@?$_Locbase@H@std@@2HB 10032d24     mexLibrary.obj
+ 0003:00000d28       ?all@?$_Locbase@H@std@@2HB 10032d28     mexLibrary.obj
+ 0003:00000d2c       ?none@?$_Locbase@H@std@@2HB 10032d2c     mexLibrary.obj
+ 0003:00000d30       ?skipws@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d30     mexLibrary.obj
+ 0003:00000d34       ?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d34     mexLibrary.obj
+ 0003:00000d38       ?uppercase@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d38     mexLibrary.obj
+ 0003:00000d3c       ?showbase@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d3c     mexLibrary.obj
+ 0003:00000d40       ?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d40     mexLibrary.obj
+ 0003:00000d44       ?showpos@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d44     mexLibrary.obj
+ 0003:00000d48       ?left@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d48     mexLibrary.obj
+ 0003:00000d4c       ?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d4c     mexLibrary.obj
+ 0003:00000d50       ?internal@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d50     mexLibrary.obj
+ 0003:00000d54       ?dec@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d54     mexLibrary.obj
+ 0003:00000d58       ?oct@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d58     mexLibrary.obj
+ 0003:00000d5c       ?hex@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d5c     mexLibrary.obj
+ 0003:00000d60       ?scientific@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d60     mexLibrary.obj
+ 0003:00000d64       ?fixed@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d64     mexLibrary.obj
+ 0003:00000d68       ?boolalpha@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d68     mexLibrary.obj
+ 0003:00000d6c       ?_Stdio@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d6c     mexLibrary.obj
+ 0003:00000d70       ?adjustfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d70     mexLibrary.obj
+ 0003:00000d74       ?basefield@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d74     mexLibrary.obj
+ 0003:00000d78       ?floatfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B 10032d78     mexLibrary.obj
+ 0003:00000d7c       ?goodbit@?$_Iosb@H@std@@2W4_Iostate@12@B 10032d7c     mexLibrary.obj
+ 0003:00000d80       ?eofbit@?$_Iosb@H@std@@2W4_Iostate@12@B 10032d80     mexLibrary.obj
+ 0003:00000d84       ?failbit@?$_Iosb@H@std@@2W4_Iostate@12@B 10032d84     mexLibrary.obj
+ 0003:00000d88       ?badbit@?$_Iosb@H@std@@2W4_Iostate@12@B 10032d88     mexLibrary.obj
+ 0003:00000d8c       ?_Hardfail@?$_Iosb@H@std@@2W4_Iostate@12@B 10032d8c     mexLibrary.obj
+ 0003:00000d90       ?in@?$_Iosb@H@std@@2W4_Openmode@12@B 10032d90     mexLibrary.obj
+ 0003:00000d94       ?out@?$_Iosb@H@std@@2W4_Openmode@12@B 10032d94     mexLibrary.obj
+ 0003:00000d98       ?ate@?$_Iosb@H@std@@2W4_Openmode@12@B 10032d98     mexLibrary.obj
+ 0003:00000d9c       ?app@?$_Iosb@H@std@@2W4_Openmode@12@B 10032d9c     mexLibrary.obj
+ 0003:00000da0       ?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B 10032da0     mexLibrary.obj
+ 0003:00000da4       ?_Nocreate@?$_Iosb@H@std@@2W4_Openmode@12@B 10032da4     mexLibrary.obj
+ 0003:00000da8       ?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B 10032da8     mexLibrary.obj
+ 0003:00000dac       ?binary@?$_Iosb@H@std@@2W4_Openmode@12@B 10032dac     mexLibrary.obj
+ 0003:00000db0       ?beg@?$_Iosb@H@std@@2W4_Seekdir@12@B 10032db0     mexLibrary.obj
+ 0003:00000db4       ?cur@?$_Iosb@H@std@@2W4_Seekdir@12@B 10032db4     mexLibrary.obj
+ 0003:00000db8       ?end@?$_Iosb@H@std@@2W4_Seekdir@12@B 10032db8     mexLibrary.obj
+ 0003:00000dbc       ??_C@_0BF@GKFBFFNG@Action?5Unknown?3?5?5?$CFd?6?$AA@ 10032dbc     mexLibrary.obj
+ 0003:00000dd8       ??_C@_0DF@KMJPFMFL@?$CB?$CB?$CB?5UNKNOWN?5PARAMETER?5?$CB?$CB?$CB?5Could?5@ 10032dd8     mexLibrary.obj
+ 0003:00000e18       ??_C@_0BM@HMILDEKD@Setting?5param?3?5?$CFs?5?$DN?5?$CF4?40f?5?6?$AA@ 10032e18     mexLibrary.obj
+ 0003:00000e3c       ??_C@_0N@NDAELEBH@Not?5started?6?$AA@ 10032e3c     mexLibrary.obj
+ 0003:00000e4c       ??_C@_0BB@GMJOFFEL@Action?5End?3?5?5?$CFd?6?$AA@ 10032e4c     mexLibrary.obj
+ 0003:00000e60       ??_C@_0BB@NJLAAOGA@Already?5started?6?$AA@ 10032e60     mexLibrary.obj
+ 0003:00000e74       ??_C@_0BD@IGIPIELL@Action?5Start?3?5?5?$CFd?6?$AA@ 10032e74     mexLibrary.obj
+ 0003:00000e8c       ??_C@_0O@PHCIEDAN@?$FLO?$FN?3?5?$CFd?5?3?5?$CFs?6?$AA@ 10032e8c     mexLibrary.obj
+ 0003:00000e9c       ??_C@_0O@FHMNJMNA@?$FLI?$FN?3?5?$CFd?5?3?5?$CFs?6?$AA@ 10032e9c     mexLibrary.obj
+ 0003:00000eac       ??_C@_0P@FKNMBJBM@Information?3?5?6?$AA@ 10032eac     mexLibrary.obj
+ 0003:00000ec0       ??_C@_1CK@POGJDOKA@?$AA?$CI?$AA?$CC?$AA_?$AAP?$AAo?$AAs?$AA?5?$AA?$DM?$AA?5?$AAs?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?$CC?$AA?0?$AA?5?$AA0?$AA?$CJ?$AA?$AA@ 10032ec0     mexLibrary.obj
+ 0003:00000ef4       ??_C@_1BO@MEPPHOO@?$AA?$CC?$AAo?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAr?$AAa?$AAn?$AAg?$AAe?$AA?$CC?$AA?$AA@ 10032ef4     mexLibrary.obj
+ 0003:00000f18       ??_C@_1LO@DEKNLMI@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu?$AAc?$AAt?$AA?5?$AAA?$AAu?$AAd?$AAi?$AAo?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAI?$AAn@ 10032f18     mexLibrary.obj
+ 0003:00001000       ??_C@_1FG@CMLDHNON@?$AA?$CI?$AA?$CC?$AAS?$AAt?$AAa?$AAn?$AAd?$AAa?$AAr?$AAd?$AA?5?$AAC?$AA?$CL?$AA?$CL?$AA?5?$AAL?$AAi?$AAb?$AAr?$AAa?$AAr?$AAi?$AAe?$AAs?$AA?5?$AAO?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5@ 10033000     mexLibrary.obj
+ 0003:00001068       ??_C@_1DM@LHGCHCBA@?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAs?$AAu?$AAb?$AAs?$AAc?$AAr?$AAi?$AAp?$AAt?$AA?5?$AAo?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5?$AAr?$AAa?$AAn?$AAg?$AAe?$AA?$AA@ 10033068     mexLibrary.obj
+ 0003:000010b0       ??_C@_1HK@HNILGGDB@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAm?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?5?$AAv?$AAi?$AAs?$AAu?$AAa@ 100330b0     mexLibrary.obj
+ 0003:00001158       ??_C@_1HK@LEOMNKFK@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?5?$AAV?$AAi?$AAs?$AAu?$AAa@ 10033158     audioio:audioIO.obj
+ 0003:000011ec       ??_C@_1DC@POOIKBAO@?$AAI?$AAT?$AAE?$AAR?$AAA?$AAT?$AAO?$AAR?$AA?5?$AAL?$AAI?$AAS?$AAT?$AA?5?$AAC?$AAO?$AAR?$AAR?$AAU?$AAP?$AAT?$AAE?$AAD?$AA?$CB?$AA?$AA@ 100331ec     audioio:audioIO.obj
+ 0003:00001228       ??_C@_1HO@DIMJPEED@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?5?$AAV?$AAi?$AAs?$AAu?$AAa@ 10033228     audioio:audioIO.obj
+ 0003:000012c0       ??_C@_1EI@HGIDLLCM@?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAe?$AAr?$AAa?$AAs?$AAe?$AA?5?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?5?$AAo?$AAu?$AAt?$AAs?$AAi?$AAd?$AAe?$AA?5?$AAr?$AAa@ 100332c0     audioio:audioIO.obj
+ 0003:00001318       ??_C@_0BD@OLBABOEK@vector?$DMT?$DO?5too?5long?$AA@ 10033318     audioio:audioIO.obj
+ 0003:00001334       ??_7length_error@std@@6B@  10033334     audioio:audioIO.obj
+ 0003:00001344       ??_7logic_error@std@@6B@   10033344     audioio:audioIO.obj
+ 0003:00001350       ??_C@_1EK@EEHFMKDC@?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAi?$AAn?$AAs?$AAe?$AAr?$AAt?$AA?5?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?5?$AAo?$AAu?$AAt?$AAs?$AAi?$AAd?$AAe?$AA?5?$AAr@ 10033350     audioio:audioIO.obj
+ 0003:000013a8       ??_C@_1CG@JNLFBNGN@?$AA?$CC?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAa?$AAr?$AAg?$AAu?$AAm?$AAe?$AAn?$AAt?$AA?$CC?$AA?$AA@ 100333a8     audioio:audioIO.obj
+ 0003:000013d8       ??_C@_1KI@INECPEDO@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAi?$AAn?$AAt?$AA?0@ 100333d8     audioio:audioIO.obj
+ 0003:000014a8       ??_C@_1NK@JLHOCNGO@?$AA?$CI?$AA?$CC?$AA_?$AAP?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AAN?$AAU?$AAL?$AAL?$AA?5?$AA?$HM?$AA?$HM?$AA?5?$AA?$CI?$AA?$CI?$AA?$CI?$AA_?$AAM?$AAy?$AAv?$AAe?$AAc?$AA?5@ 100334a8     audioio:audioIO.obj
+ 0003:000015b0       ??_C@_1IK@PBGOHPOE@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAi?$AAn?$AAt?$AA?0@ 100335b0     audioio:audioIO.obj
+ 0003:00001658       ??_C@_1FO@OCPOOAIA@?$AA?$CI?$AA?$CC?$AAS?$AAt?$AAa?$AAn?$AAd?$AAa?$AAr?$AAd?$AA?5?$AAC?$AA?$CL?$AA?$CL?$AA?5?$AAL?$AAi?$AAb?$AAr?$AAa?$AAr?$AAi?$AAe?$AAs?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd@ 10033658     audioio:audioIO.obj
+ 0003:000016c8       ??_C@_1DM@HINDPMBP@?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AAs?$AA?5?$AAi?$AAn?$AAc?$AAo?$AAm?$AAp?$AAa?$AAt?$AAi?$AAb?$AAl?$AAe?$AA?$AA@ 100336c8     audioio:audioIO.obj
+ 0003:00001710       ??_C@_1PE@CGPCCAGF@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu@ 10033710     audioio:audioIO.obj
+ 0003:00001838       ??_C@_1OO@PBNBABMO@?$AA?$CI?$AA?$CC?$AA_?$AAM?$AAy?$AAp?$AAt?$AAr?$AA?5?$AA?$CL?$AA?5?$AA_?$AAO?$AAf?$AAf?$AA?5?$AA?$DM?$AA?$DN?$AA?5?$AA?$CI?$AA?$CI?$AA_?$AAM?$AAy?$AAv?$AAe?$AAc?$AA?5?$AA?$CK?$AA?$CJ?$AA?$CI?$AAt@ 10033838     audioio:audioIO.obj
+ 0003:00001958       ??_C@_1NO@CEMGOHMB@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu@ 10033958     audioio:audioIO.obj
+ 0003:00001a64       ??_C@_1DK@LIMPPGHH@?$AA?$CI?$AA?$CC?$AAt?$AAh?$AAi?$AAs?$AA?9?$AA?$DO?$AA_?$AAM?$AAy?$AAc?$AAo?$AAn?$AAt?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAN?$AAU?$AAL?$AAL?$AA?$CC?$AA?0?$AA?5?$AA0?$AA?$CJ?$AA?$AA@ 10033a64     audioio:audioIO.obj
+ 0003:00001ab0       ??_C@_1NG@MGKKLFMM@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu@ 10033ab0     audioio:audioIO.obj
+ 0003:00001bb4       ??_7bad_alloc@std@@6B@     10033bb4     audioio:audioIO.obj
+ 0003:00001bc0       ??_C@_1CK@EOPGIILJ@?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAn?$AAu?$AAl?$AAl?$AA?5?$AAp?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AA?$AA@ 10033bc0     audioio:audioIO.obj
+ 0003:00001bf8       ??_C@_1HK@MKDHFGFB@?$AAC?$AA?3?$AA?2?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAF?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?5?$AAV?$AAi?$AAs?$AAu?$AAa@ 10033bf8     audioio:audioIO.obj
+ 0003:00001c90       ??_C@_1JA@BAFKEHI@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAi?$AAn?$AAt?$AA?0@ 10033c90     audioio:audioIO.obj
+ 0003:00001d40       ??_C@_1EG@FOHJJHAC@?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?5?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAd?$AAe?$AAr?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAa?$AAb@ 10033d40     audioio:audioIO.obj
+ 0003:00001d94       ??_C@_1CO@DGLIKNHI@?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?5?$AAr?$AAa?$AAn?$AAg?$AAe?$AA?$AA@ 10033d94     audioio:audioIO.obj
+ 0003:00001de0       ?MAX_SAMPLE_RATES@RtApi@@1IB 10033de0     audioio:RtAudio.obj
+ 0003:00001de4       ?SAMPLE_RATES@RtApi@@1QBIB 10033de4     audioio:RtAudio.obj
+ 0003:00002c98       ??_7RtError@@6B@           10034c98     audioio:RtAudio.obj
+ 0003:00002cb0       ??_C@_02PHMGELLB@?6?6?$AA@ 10034cb0     audioio:RtAudio.obj
+ 0003:00002cb8       ??_7RtApi@@6B@             10034cb8     audioio:RtAudio.obj
+ 0003:00002cfc       ??_7RtApiAsio@@6B@         10034cfc     audioio:RtAudio.obj
+ 0003:00002d40       __real@405fc00000000000    10034d40     audioio:RtAudio.obj
+ 0003:00002d50       __real@40dfffc000000000    10034d50     audioio:RtAudio.obj
+ 0003:00002d60       __real@41dfffffffc00000    10034d60     audioio:RtAudio.obj
+ 0003:00002d6c       __real@30000000            10034d6c     audioio:RtAudio.obj
+ 0003:00002d70       __real@38000000            10034d70     audioio:RtAudio.obj
+ 0003:00002d74       __real@3c000000            10034d74     audioio:RtAudio.obj
+ 0003:00002d78       __real@3e00000000000000    10034d78     audioio:RtAudio.obj
+ 0003:00002d88       __real@3f00000000000000    10034d88     audioio:RtAudio.obj
+ 0003:00002d98       __real@3f80000000000000    10034d98     audioio:RtAudio.obj
+ 0003:00002da8       ??_C@_1HC@HBCEAHKD@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAi?$AAn?$AAt?$AA?0?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAa?$AAl?$AAl?$AAo?$AAc@ 10034da8     audioio:RtAudio.obj
+ 0003:00002e30       ??_C@_1MK@LEDFJJE@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AAv?$AAe?$AAc?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu?$AAc?$AAt?$AA?5?$AAR?$AAt?$AAA?$AAp?$AAi?$AA?3?$AA?3?$AAR?$AAt?$AAA?$AAp?$AAi?$AAD@ 10034e30     audioio:RtAudio.obj
+ 0003:00002f28       ??_C@_1BAA@DPIEGNLP@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu@ 10034f28     audioio:RtAudio.obj
+ 0003:00003060       ??_C@_1JC@PPEAGGND@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAi?$AAn?$AAt?$AA?0@ 10035060     audioio:RtAudio.obj
+ 0003:00003110       ??_C@_1OK@GOBOFPDG@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu@ 10035110     audioio:RtAudio.obj
+ 0003:00003228       ??_C@_1OC@EELEJBCM@?$AAs?$AAt?$AAd?$AA?3?$AA?3?$AA_?$AAV?$AAe?$AAc?$AAt?$AAo?$AAr?$AA_?$AAc?$AAo?$AAn?$AAs?$AAt?$AA_?$AAi?$AAt?$AAe?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$DM?$AAs?$AAt?$AAr?$AAu@ 10035228     audioio:RtAudio.obj
+ 0003:000033d0       __pRawDllMain              100353d0     MSVCRTD:crtdll.obj
+ 0003:000033d0       __pDefaultRawDllMain       100353d0     MSVCRTD:crtdll.obj
+ 0003:000033d4       ??_C@_08EIBOPINA@crtdll?4c?$AA@ 100353d4     MSVCRTD:crtdll.obj
+ 0003:000033e4       ??_7type_info@@6B@         100353e4     MSVCRTD:ti_inst.obj
+ 0003:000033ec       ??_C@_0BO@GNIAFIKK@Unknown?5Runtime?5Check?5Error?6?$AN?$AA@ 100353ec     MSVCRTD:error.obj
+ 0003:00003410       ??_C@_0CM@NGINOKPC@Stack?5memory?5around?5_alloca?5was?5@ 10035410     MSVCRTD:error.obj
+ 0003:00003444       ??_C@_0DG@HKJMLLLP@A?5local?5variable?5was?5used?5before@ 10035444     MSVCRTD:error.obj
+ 0003:00003484       ??_C@_0BN@FFOINMNJ@Stack?5memory?5was?5corrupted?6?$AN?$AA@ 10035484     MSVCRTD:error.obj
+ 0003:000034a8       ??_C@_0BBN@GPMLNJCF@A?5cast?5to?5a?5smaller?5data?5type?5ha@ 100354a8     MSVCRTD:error.obj
+ 0003:00003600       ??_C@_0NN@NGPKDKPD@The?5value?5of?5ESP?5was?5not?5properl@ 10035600     MSVCRTD:error.obj
+ 0003:000037ac       ??_C@_0CA@IODNCDPG@Run?9Time?5Check?5Failure?5?$CD?$CFd?5?9?5?$CFs?$AA@ 100357ac     MSVCRTD:error.obj
+ 0003:000037d4       ??_C@_0BE@GNBOBNCK@Unknown?5Module?5Name?$AA@ 100357d4     MSVCRTD:error.obj
+ 0003:000037ec       ??_C@_0BB@PFFGGCJP@Unknown?5Filename?$AA@ 100357ec     MSVCRTD:error.obj
+ 0003:00003800       ??_C@_1EA@NFKNIFJP@?$AAR?$AAu?$AAn?$AA?9?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AA?$CD?$AA?$CF?$AAd?$AA?5?$AA?9?$AA?5?$AA?$CF?$AAs?$AA?$AA@ 10035800     MSVCRTD:error.obj
+ 0003:00003850       ??_C@_1GM@OLMCBDMB@?$AAR?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAC?$AAh?$AAe?$AAc?$AAk?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?4?$AA?6?$AA?$AN?$AA?5?$AAU?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAt?$AAo@ 10035850     MSVCRTD:error.obj
+ 0003:000038d4       ??_C@_0CG@IAFNJNEE@Stack?5corrupted?5near?5unknown?5var@ 100358d4     MSVCRTD:error.obj
+ 0003:00003908       ??_C@_0EJ@LJKNEOLN@Stack?5area?5around?5_alloca?5memory@ 10035908     MSVCRTD:error.obj
+ 0003:00003960       ??_C@_08KJEDNCKC@?$CFs?$CFs?$CFs?$CFs?$AA@ 10035960     MSVCRTD:error.obj
+ 0003:0000396c       ??_C@_02LLMPMKNF@?$DO?5?$AA@ 1003596c     MSVCRTD:error.obj
+ 0003:00003970       ??_C@_01EEMJAFIK@?6?$AA@   10035970     MSVCRTD:error.obj
+ 0003:00003974       ??_C@_0BC@KIBAILCI@?$CFs?$CFs?$CFp?$CFs?$CFld?$CFs?$CFd?$CFs?$AA@ 10035974     MSVCRTD:error.obj
+ 0003:00003990       ??_C@_0EI@CLEPFNGI@Stack?5area?5around?5_alloca?5memory@ 10035990     MSVCRTD:error.obj
+ 0003:000039e8       ??_C@_0N@MHFFIMFG@?6Address?3?50x?$AA@ 100359e8     MSVCRTD:error.obj
+ 0003:000039f8       ??_C@_07DFDJCKFN@?6Size?3?5?$AA@ 100359f8     MSVCRTD:error.obj
+ 0003:00003a04       ??_C@_0CK@DKGBICFE@?6Allocation?5number?5within?5this?5f@ 10035a04     MSVCRTD:error.obj
+ 0003:00003a38       ??_C@_08OMAHNMHJ@?6Data?3?5?$DM?$AA@ 10035a38     MSVCRTD:error.obj
+ 0003:00003a44       ??_C@_09FOPFMPEJ@wsprintfA?$AA@ 10035a44     MSVCRTD:error.obj
+ 0003:00003a50       ??_C@_0L@GMPLCCII@user32?4dll?$AA@ 10035a50     MSVCRTD:error.obj
+ 0003:00003a60       ??_C@_05MKKEDADM@?$CF?42X?5?$AA@ 10035a60     MSVCRTD:error.obj
+ 0003:00003a68       ??_C@_0DE@OHJBPMBP@A?5variable?5is?5being?5used?5without@ 10035a68     MSVCRTD:error.obj
+ 0003:00003aa8       ??_C@_0BP@OGBCLIBO@Stack?5around?5_alloca?5corrupted?$AA@ 10035aa8     MSVCRTD:userapi.obj
+ 0003:00003ad0       ??_C@_0CK@CNLNOEPB@Local?5variable?5used?5before?5initi@ 10035ad0     MSVCRTD:userapi.obj
+ 0003:00003b04       ??_C@_0BI@CIGMDCBH@Stack?5memory?5corruption?$AA@ 10035b04     MSVCRTD:userapi.obj
+ 0003:00003b20       ??_C@_0CK@FEGOIOPB@Cast?5to?5smaller?5type?5causing?5los@ 10035b20     MSVCRTD:userapi.obj
+ 0003:00003b54       ??_C@_0BJ@HEGAHDFO@Stack?5pointer?5corruption?$AA@ 10035b54     MSVCRTD:userapi.obj
+ 0003:00003b8c       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 10035b8c     MSVCRTD:tncleanup.obj
+ 0003:00003b90       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 10035b90     MSVCRTD:tncleanup.obj
+ 0003:00003b94       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 10035b94     MSVCRTD:tncleanup.obj
+ 0003:00003b98       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 10035b98     MSVCRTD:tncleanup.obj
+ 0003:00003b9c       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 10035b9c     MSVCRTD:tncleanup.obj
+ 0003:00003bac       ??_C@_0M@EKFFODEC@MSPDB80?4DLL?$AA@ 10035bac     MSVCRTD:pdblkup.obj
+ 0003:00003bbc       ??_C@_01KDCPPGHE@r?$AA@    10035bbc     MSVCRTD:pdblkup.obj
+ 0003:00003bc0       ??_C@_0BB@KCIACLNC@PDBOpenValidate5?$AA@ 10035bc0     MSVCRTD:pdblkup.obj
+ 0003:00003bd4       ??_C@_0BF@BMIHBHCA@EnvironmentDirectory?$AA@ 10035bd4     MSVCRTD:pdblkup.obj
+ 0003:00003bf0       ??_C@_0CN@EAEOKKOC@SOFTWARE?2Microsoft?2VisualStudio?2@ 10035bf0     MSVCRTD:pdblkup.obj
+ 0003:00003c28       ??_C@_0M@HLOHPNFA@RegCloseKey?$AA@ 10035c28     MSVCRTD:pdblkup.obj
+ 0003:00003c38       ??_C@_0BB@HHEIPGME@RegQueryValueExA?$AA@ 10035c38     MSVCRTD:pdblkup.obj
+ 0003:00003c4c       ??_C@_0O@DCOGKJGG@RegOpenKeyExA?$AA@ 10035c4c     MSVCRTD:pdblkup.obj
+ 0003:00003c5c       ??_C@_0N@JJPEKNFO@ADVAPI32?4DLL?$AA@ 10035c5c     MSVCRTD:pdblkup.obj
+ 0003:00004004       ??_R4length_error@std@@6B@ 10036004     audioio:audioIO.obj
+ 0003:0000401c       ??_R3length_error@std@@8   1003601c     audioio:audioIO.obj
+ 0003:00004030       ??_R2length_error@std@@8   10036030     audioio:audioIO.obj
+ 0003:00004040       ??_R1A@?0A@EA@length_error@std@@8 10036040     audioio:audioIO.obj
+ 0003:00004064       ??_R1A@?0A@EA@logic_error@std@@8 10036064     audioio:audioIO.obj
+ 0003:00004088       ??_R3logic_error@std@@8    10036088     audioio:audioIO.obj
+ 0003:0000409c       ??_R2logic_error@std@@8    1003609c     audioio:audioIO.obj
+ 0003:000040a8       ??_R1A@?0A@EA@exception@std@@8 100360a8     audioio:audioIO.obj
+ 0003:000040cc       ??_R3exception@std@@8      100360cc     audioio:audioIO.obj
+ 0003:000040e0       ??_R2exception@std@@8      100360e0     audioio:audioIO.obj
+ 0003:000040e8       ??_R4logic_error@std@@6B@  100360e8     audioio:audioIO.obj
+ 0003:00004100       ??_R4bad_alloc@std@@6B@    10036100     audioio:audioIO.obj
+ 0003:00004118       ??_R3bad_alloc@std@@8      10036118     audioio:audioIO.obj
+ 0003:0000412c       ??_R2bad_alloc@std@@8      1003612c     audioio:audioIO.obj
+ 0003:00004138       ??_R1A@?0A@EA@bad_alloc@std@@8 10036138     audioio:audioIO.obj
+ 0003:0000415c       ??_R4RtError@@6B@          1003615c     audioio:RtAudio.obj
+ 0003:00004174       ??_R3RtError@@8            10036174     audioio:RtAudio.obj
+ 0003:00004188       ??_R2RtError@@8            10036188     audioio:RtAudio.obj
+ 0003:00004190       ??_R1A@?0A@EA@RtError@@8   10036190     audioio:RtAudio.obj
+ 0003:000041b4       ??_R4RtApi@@6B@            100361b4     audioio:RtAudio.obj
+ 0003:000041cc       ??_R3RtApi@@8              100361cc     audioio:RtAudio.obj
+ 0003:000041e0       ??_R2RtApi@@8              100361e0     audioio:RtAudio.obj
+ 0003:000041e8       ??_R1A@?0A@EA@RtApi@@8     100361e8     audioio:RtAudio.obj
+ 0003:0000420c       ??_R4RtApiAsio@@6B@        1003620c     audioio:RtAudio.obj
+ 0003:00004224       ??_R3RtApiAsio@@8          10036224     audioio:RtAudio.obj
+ 0003:00004238       ??_R2RtApiAsio@@8          10036238     audioio:RtAudio.obj
+ 0003:00004244       ??_R1A@?0A@EA@RtApiAsio@@8 10036244     audioio:RtAudio.obj
+ 0003:00004268       ??_R4type_info@@6B@        10036268     MSVCRTD:ti_inst.obj
+ 0003:00004280       ??_R3type_info@@8          10036280     MSVCRTD:ti_inst.obj
+ 0003:00004294       ??_R2type_info@@8          10036294     MSVCRTD:ti_inst.obj
+ 0003:0000429c       ??_R1A@?0A@EA@type_info@@8 1003629c     MSVCRTD:ti_inst.obj
+ 0003:000043d0       ___rtc_iaa                 100363d0     MSVCRTD:initsect.obj
+ 0003:000045e4       ___rtc_izz                 100365e4     MSVCRTD:initsect.obj
+ 0003:000046e8       ___rtc_taa                 100366e8     MSVCRTD:initsect.obj
+ 0003:000048fc       ___rtc_tzz                 100368fc     MSVCRTD:initsect.obj
+ 0003:00004e64       __TI3?AVlength_error@std@@ 10036e64     audioio:audioIO.obj
+ 0003:00004ea8       __CTA3?AVlength_error@std@@ 10036ea8     audioio:audioIO.obj
+ 0003:00004ebc       __CT??_R0?AVlength_error@std@@@8??0length_error@std@@QAE@ABV01@@Z44 10036ebc     audioio:audioIO.obj
+ 0003:00004edc       __CT??_R0?AVlogic_error@std@@@8??0logic_error@std@@QAE@ABV01@@Z44 10036edc     audioio:audioIO.obj
+ 0003:00004efc       __CT??_R0?AVexception@std@@@8??0exception@std@@QAE@ABV01@@Z12 10036efc     audioio:audioIO.obj
+ 0003:0000523c       __TI2?AVbad_alloc@std@@    1003723c     audioio:audioIO.obj
+ 0003:00005250       __CTA2?AVbad_alloc@std@@   10037250     audioio:audioIO.obj
+ 0003:00005260       __CT??_R0?AVbad_alloc@std@@@8??0bad_alloc@std@@QAE@ABV01@@Z12 10037260     audioio:audioIO.obj
+ 0003:000054bc       __TI1?AVRtError@@          100374bc     audioio:RtAudio.obj
+ 0003:0000589c       __CTA1?AVRtError@@         1003789c     audioio:RtAudio.obj
+ 0003:000058a4       __CT??_R0?AVRtError@@@8??0RtError@@QAE@ABV0@@Z40 100378a4     audioio:RtAudio.obj
+ 0004:00000000       ?intparamarray@@3PAPADA    10039000     ConstShift.obj
+ 0004:0000003c       ?doubleparamarray@@3PAPADA 1003903c     ConstShift.obj
+ 0004:00000078       ?boolparamarray@@3PAPADA   10039078     ConstShift.obj
+ 0004:00000120       ??_R0?AVRtError@@@8        10039120     audioio:audioIO.obj
+ 0004:0000013c       ??_R0?AVlength_error@std@@@8 1003913c     audioio:audioIO.obj
+ 0004:00000164       ??_R0?AVlogic_error@std@@@8 10039164     audioio:audioIO.obj
+ 0004:00000188       ??_R0?AVexception@std@@@8  10039188     audioio:audioIO.obj
+ 0004:000001ac       ??_R0?AVbad_alloc@std@@@8  100391ac     audioio:audioIO.obj
+ 0004:000001d4       ??_R0?AVRtApi@@@8          100391d4     audioio:RtAudio.obj
+ 0004:000001ec       ??_R0?AVRtApiAsio@@@8      100391ec     audioio:RtAudio.obj
+ 0004:00000250       ___security_cookie         10039250     MSVCRTD:gs_cookie.obj
+ 0004:00000254       ___security_cookie_complement 10039254     MSVCRTD:gs_cookie.obj
+ 0004:00000258       ??_R0?AVtype_info@@@8      10039258     MSVCRTD:ti_inst.obj
+ 0004:00000274       ?_RTC_ErrorLevels@@3PAHA   10039274     MSVCRTD:error.obj
+ 0004:000002a8       ___native_dllmain_reason   100392a8     MSVCRTD:natstart.obj
+ 0004:000002ac       ___native_vcclrit_reason   100392ac     MSVCRTD:natstart.obj
+ 0004:0128c0d0       ?audio@@3PAVRtAudio@@A     112c50d0     audioio:audioIO.obj
+ 0004:0128c0d8       ?driverInfo@@3UASIODriverInfo@@A 112c50d8     audioio:RtAudio.obj
+ 0004:0128c180       ?asioCallbacks@@3UASIOCallbacks@@A 112c5180     audioio:RtAudio.obj
+ 0004:0128c190       ?asioCallbackInfo@@3PAUCallbackInfo@@A 112c5190     audioio:RtAudio.obj
+ 0004:0128c194       ?drivers@@3VAsioDrivers@@A 112c5194     audioio:RtAudio.obj
+ 0004:0128c1cc       ?asioDrivers@@3PAVAsioDrivers@@A 112c51cc     audioio:asiodrivers.obj
+ 0004:0128c1d0       ?theAsioDriver@@3PAUIASIO@@A 112c51d0     audioio:asio.obj
+ 0004:0128c1dc       ?wsprintffp@@3P6AHPADPBDZZA 112c51dc     MSVCRTD:error.obj
+ 0004:0128c1ec       __forceCRTManifest         112c51ec     MSVCRTD:crtmanifest.obj
+ 0004:0128c1f0       ?__type_info_root_node@@3U__type_info_node@@A 112c51f0     MSVCRTD:tncleanup.obj
+ 0004:0128c5d0       __adjust_fdiv              112c55d0     <common>
+ 0004:0128c5dc       ___native_startup_state    112c55dc     <common>
+ 0004:0128c5ec       ___native_startup_lock     112c55ec     <common>
+ 0004:0128c5f0       ___sse2_available          112c55f0     <common>
+ 0004:0128c5fc       ___dyn_tls_init_callback   112c55fc     <common>
+ 0004:0128c608       ___onexitend               112c5608     <common>
+ 0004:0128c618       ___onexitbegin             112c5618     <common>
+ 0005:00000000       __IMPORT_DESCRIPTOR_libmx  112c6000     libmx:libmx.dll
+ 0005:00000014       __IMPORT_DESCRIPTOR_libmex 112c6014     libmex:libmex.dll
+ 0005:00000028       __IMPORT_DESCRIPTOR_MSVCR80D 112c6028     MSVCRTD:MSVCR80D.dll
+ 0005:0000003c       __IMPORT_DESCRIPTOR_MSVCP80D 112c603c     msvcprtd:MSVCP80D.dll
+ 0005:00000050       __IMPORT_DESCRIPTOR_USER32 112c6050     user32:USER32.dll
+ 0005:00000064       __IMPORT_DESCRIPTOR_ADVAPI32 112c6064     advapi32:ADVAPI32.dll
+ 0005:00000078       __IMPORT_DESCRIPTOR_ole32  112c6078     ole32:ole32.dll
+ 0005:0000008c       __IMPORT_DESCRIPTOR_KERNEL32 112c608c     kernel32:KERNEL32.dll
+ 0005:000000a0       __NULL_IMPORT_DESCRIPTOR   112c60a0     libmx:libmx.dll
+ 0005:000004bc       __imp__RegCloseKey@4       112c64bc     advapi32:ADVAPI32.dll
+ 0005:000004c0       __imp__RegOpenKeyA@12      112c64c0     advapi32:ADVAPI32.dll
+ 0005:000004c4       __imp__RegQueryValueExA@24 112c64c4     advapi32:ADVAPI32.dll
+ 0005:000004c8       __imp__RegOpenKeyExA@20    112c64c8     advapi32:ADVAPI32.dll
+ 0005:000004cc       __imp__RegEnumKeyA@16      112c64cc     advapi32:ADVAPI32.dll
+ 0005:000004d0       \177ADVAPI32_NULL_THUNK_DATA 112c64d0     advapi32:ADVAPI32.dll
+ 0005:00000500       __imp__HeapFree@12         112c6500     kernel32:KERNEL32.dll
+ 0005:00000504       __imp__SetUnhandledExceptionFilter@4 112c6504     kernel32:KERNEL32.dll
+ 0005:00000508       __imp__UnhandledExceptionFilter@4 112c6508     kernel32:KERNEL32.dll
+ 0005:0000050c       __imp__GetCurrentProcess@0 112c650c     kernel32:KERNEL32.dll
+ 0005:00000510       __imp__TerminateProcess@8  112c6510     kernel32:KERNEL32.dll
+ 0005:00000514       __imp__DisableThreadLibraryCalls@4 112c6514     kernel32:KERNEL32.dll
+ 0005:00000518       __imp__GetSystemTimeAsFileTime@4 112c6518     kernel32:KERNEL32.dll
+ 0005:0000051c       __imp__GetCurrentProcessId@0 112c651c     kernel32:KERNEL32.dll
+ 0005:00000520       __imp__GetCurrentThreadId@0 112c6520     kernel32:KERNEL32.dll
+ 0005:00000524       __imp__GetTickCount@0      112c6524     kernel32:KERNEL32.dll
+ 0005:00000528       __imp__QueryPerformanceCounter@4 112c6528     kernel32:KERNEL32.dll
+ 0005:0000052c       __imp__LoadLibraryA@4      112c652c     kernel32:KERNEL32.dll
+ 0005:00000530       __imp__GetProcAddress@8    112c6530     kernel32:KERNEL32.dll
+ 0005:00000534       __imp__lstrlenA@4          112c6534     kernel32:KERNEL32.dll
+ 0005:00000538       __imp__IsDebuggerPresent@0 112c6538     kernel32:KERNEL32.dll
+ 0005:0000053c       __imp__HeapAlloc@12        112c653c     kernel32:KERNEL32.dll
+ 0005:00000540       __imp__DebugBreak@0        112c6540     kernel32:KERNEL32.dll
+ 0005:00000544       __imp__RaiseException@16   112c6544     kernel32:KERNEL32.dll
+ 0005:00000548       __imp__InterlockedCompareExchange@12 112c6548     kernel32:KERNEL32.dll
+ 0005:0000054c       __imp__Sleep@4             112c654c     kernel32:KERNEL32.dll
+ 0005:00000550       __imp__InterlockedExchange@8 112c6550     kernel32:KERNEL32.dll
+ 0005:00000554       __imp__OpenFile@12         112c6554     kernel32:KERNEL32.dll
+ 0005:00000558       __imp__MultiByteToWideChar@24 112c6558     kernel32:KERNEL32.dll
+ 0005:0000055c       __imp__SetEvent@4          112c655c     kernel32:KERNEL32.dll
+ 0005:00000560       __imp__WaitForMultipleObjects@16 112c6560     kernel32:KERNEL32.dll
+ 0005:00000564       __imp__ResetEvent@4        112c6564     kernel32:KERNEL32.dll
+ 0005:00000568       __imp__EnterCriticalSection@4 112c6568     kernel32:KERNEL32.dll
+ 0005:0000056c       __imp__LeaveCriticalSection@4 112c656c     kernel32:KERNEL32.dll
+ 0005:00000570       __imp__CreateEventA@16     112c6570     kernel32:KERNEL32.dll
+ 0005:00000574       __imp__CloseHandle@4       112c6574     kernel32:KERNEL32.dll
+ 0005:00000578       __imp__DeleteCriticalSection@4 112c6578     kernel32:KERNEL32.dll
+ 0005:0000057c       __imp__InitializeCriticalSection@4 112c657c     kernel32:KERNEL32.dll
+ 0005:00000580       __imp__GetProcessHeap@0    112c6580     kernel32:KERNEL32.dll
+ 0005:00000584       __imp__GetModuleFileNameW@12 112c6584     kernel32:KERNEL32.dll
+ 0005:00000588       __imp__VirtualQuery@12     112c6588     kernel32:KERNEL32.dll
+ 0005:0000058c       __imp__FreeLibrary@4       112c658c     kernel32:KERNEL32.dll
+ 0005:00000590       __imp__WideCharToMultiByte@32 112c6590     kernel32:KERNEL32.dll
+ 0005:00000594       \177KERNEL32_NULL_THUNK_DATA 112c6594     kernel32:KERNEL32.dll
+ 0005:000005dc       __imp_?length@?$char_traits@D@std@@SAIPBD@Z 112c65dc     msvcprtd:MSVCP80D.dll
+ 0005:000005e0       __imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHPBDH@Z 112c65e0     msvcprtd:MSVCP80D.dll
+ 0005:000005e4       __imp_?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEXXZ 112c65e4     msvcprtd:MSVCP80D.dll
+ 0005:000005e8       __imp_?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEXXZ 112c65e8     msvcprtd:MSVCP80D.dll
+ 0005:000005ec       __imp_?uncaught_exception@std@@YA_NXZ 112c65ec     msvcprtd:MSVCP80D.dll
+ 0005:000005f0       __imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ 112c65f0     msvcprtd:MSVCP80D.dll
+ 0005:000005f4       __imp_?good@ios_base@std@@QBE_NXZ 112c65f4     msvcprtd:MSVCP80D.dll
+ 0005:000005f8       __imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ 112c65f8     msvcprtd:MSVCP80D.dll
+ 0005:000005fc       __imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ 112c65fc     msvcprtd:MSVCP80D.dll
+ 0005:00000600       __imp_?width@ios_base@std@@QBEHXZ 112c6600     msvcprtd:MSVCP80D.dll
+ 0005:00000604       __imp_?flags@ios_base@std@@QBEHXZ 112c6604     msvcprtd:MSVCP80D.dll
+ 0005:00000608       __imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ 112c6608     msvcprtd:MSVCP80D.dll
+ 0005:0000060c       __imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ 112c660c     msvcprtd:MSVCP80D.dll
+ 0005:00000610       __imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z 112c6610     msvcprtd:MSVCP80D.dll
+ 0005:00000614       __imp_?eof@?$char_traits@D@std@@SAHXZ 112c6614     msvcprtd:MSVCP80D.dll
+ 0005:00000618       __imp_?eq_int_type@?$char_traits@D@std@@SA_NABH0@Z 112c6618     msvcprtd:MSVCP80D.dll
+ 0005:0000061c       __imp_?c_str@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEPBDXZ 112c661c     msvcprtd:MSVCP80D.dll
+ 0005:00000620       __imp_?_Debug_message@std@@YAXPB_W0I@Z 112c6620     msvcprtd:MSVCP80D.dll
+ 0005:00000624       __imp_??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@ABV01@@Z 112c6624     msvcprtd:MSVCP80D.dll
+ 0005:00000628       __imp_??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ 112c6628     msvcprtd:MSVCP80D.dll
+ 0005:0000062c       __imp_??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@U_Has_debug_it@01@@Z 112c662c     msvcprtd:MSVCP80D.dll
+ 0005:00000630       __imp_?_Orphan_all@_Container_base@std@@QBEXXZ 112c6630     msvcprtd:MSVCP80D.dll
+ 0005:00000634       __imp_??1_Container_base@std@@QAE@XZ 112c6634     msvcprtd:MSVCP80D.dll
+ 0005:00000638       __imp_??0_Container_base@std@@QAE@XZ 112c6638     msvcprtd:MSVCP80D.dll
+ 0005:0000063c       __imp_??1_Lockit@std@@QAE@XZ 112c663c     msvcprtd:MSVCP80D.dll
+ 0005:00000640       __imp_??0_Lockit@std@@QAE@H@Z 112c6640     msvcprtd:MSVCP80D.dll
+ 0005:00000644       __imp_??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z 112c6644     msvcprtd:MSVCP80D.dll
+ 0005:00000648       __imp_??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@ABV01@@Z 112c6648     msvcprtd:MSVCP80D.dll
+ 0005:0000064c       __imp_??$?6DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@0@AAV10@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@@Z 112c664c     msvcprtd:MSVCP80D.dll
+ 0005:00000650       __imp_?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A 112c6650     msvcprtd:MSVCP80D.dll
+ 0005:00000654       __imp_?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z 112c6654     msvcprtd:MSVCP80D.dll
+ 0005:00000658       __imp_?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@@Z 112c6658     msvcprtd:MSVCP80D.dll
+ 0005:0000065c       __imp_?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z 112c665c     msvcprtd:MSVCP80D.dll
+ 0005:00000660       __imp_?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z 112c6660     msvcprtd:MSVCP80D.dll
+ 0005:00000664       __imp_?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB 112c6664     msvcprtd:MSVCP80D.dll
+ 0005:00000668       __imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z 112c6668     msvcprtd:MSVCP80D.dll
+ 0005:0000066c       __imp_?endl@std@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@1@AAV21@@Z 112c666c     msvcprtd:MSVCP80D.dll
+ 0005:00000670       __imp_?width@ios_base@std@@QAEHH@Z 112c6670     msvcprtd:MSVCP80D.dll
+ 0005:00000674       __imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z 112c6674     msvcprtd:MSVCP80D.dll
+ 0005:00000678       \177MSVCP80D_NULL_THUNK_DATA 112c6678     msvcprtd:MSVCP80D.dll
+ 0005:000006c0       __imp_?_type_info_dtor_internal_method@type_info@@QAEXXZ 112c66c0     MSVCRTD:MSVCR80D.dll
+ 0005:000006c4       __imp___crt_debugger_hook  112c66c4     MSVCRTD:MSVCR80D.dll
+ 0005:000006c8       __imp____clean_type_info_names_internal 112c66c8     MSVCRTD:MSVCR80D.dll
+ 0005:000006cc       __imp___except_handler4_common 112c66cc     MSVCRTD:MSVCR80D.dll
+ 0005:000006d0       __imp_?terminate@@YAXXZ    112c66d0     MSVCRTD:MSVCR80D.dll
+ 0005:000006d4       __imp____CppXcptFilter     112c66d4     MSVCRTD:MSVCR80D.dll
+ 0005:000006d8       __imp___adjust_fdiv        112c66d8     MSVCRTD:MSVCR80D.dll
+ 0005:000006dc       __imp___amsg_exit          112c66dc     MSVCRTD:MSVCR80D.dll
+ 0005:000006e0       __imp___initterm_e         112c66e0     MSVCRTD:MSVCR80D.dll
+ 0005:000006e4       __imp___initterm           112c66e4     MSVCRTD:MSVCR80D.dll
+ 0005:000006e8       __imp___CrtSetCheckCount   112c66e8     MSVCRTD:MSVCR80D.dll
+ 0005:000006ec       __imp___encoded_null       112c66ec     MSVCRTD:MSVCR80D.dll
+ 0005:000006f0       __imp___free_dbg           112c66f0     MSVCRTD:MSVCR80D.dll
+ 0005:000006f4       __imp___malloc_dbg         112c66f4     MSVCRTD:MSVCR80D.dll
+ 0005:000006f8       __imp___decode_pointer     112c66f8     MSVCRTD:MSVCR80D.dll
+ 0005:000006fc       __imp___onexit             112c66fc     MSVCRTD:MSVCR80D.dll
+ 0005:00000700       __imp__cos                 112c6700     MSVCRTD:MSVCR80D.dll
+ 0005:00000704       __imp__strcmp              112c6704     MSVCRTD:MSVCR80D.dll
+ 0005:00000708       __imp__printf              112c6708     MSVCRTD:MSVCR80D.dll
+ 0005:0000070c       __imp___lock               112c670c     MSVCRTD:MSVCR80D.dll
+ 0005:00000710       __imp___encode_pointer     112c6710     MSVCRTD:MSVCR80D.dll
+ 0005:00000714       __imp____dllonexit         112c6714     MSVCRTD:MSVCR80D.dll
+ 0005:00000718       __imp___unlock             112c6718     MSVCRTD:MSVCR80D.dll
+ 0005:0000071c       __imp___CRT_RTC_INITW      112c671c     MSVCRTD:MSVCR80D.dll
+ 0005:00000720       __imp__strcpy              112c6720     MSVCRTD:MSVCR80D.dll
+ 0005:00000724       __imp__sqrt                112c6724     MSVCRTD:MSVCR80D.dll
+ 0005:00000728       __imp__pow                 112c6728     MSVCRTD:MSVCR80D.dll
+ 0005:0000072c       __imp__fabs                112c672c     MSVCRTD:MSVCR80D.dll
+ 0005:00000730       __imp__log                 112c6730     MSVCRTD:MSVCR80D.dll
+ 0005:00000734       __imp__atan2               112c6734     MSVCRTD:MSVCR80D.dll
+ 0005:00000738       __imp__memset              112c6738     MSVCRTD:MSVCR80D.dll
+ 0005:0000073c       __imp__memcpy              112c673c     MSVCRTD:MSVCR80D.dll
+ 0005:00000740       __imp__log10               112c6740     MSVCRTD:MSVCR80D.dll
+ 0005:00000744       __imp__calloc              112c6744     MSVCRTD:MSVCR80D.dll
+ 0005:00000748       __imp__free                112c6748     MSVCRTD:MSVCR80D.dll
+ 0005:0000074c       __imp__malloc              112c674c     MSVCRTD:MSVCR80D.dll
+ 0005:00000750       __imp____iob_func          112c6750     MSVCRTD:MSVCR80D.dll
+ 0005:00000754       __imp__fprintf             112c6754     MSVCRTD:MSVCR80D.dll
+ 0005:00000758       __imp__strlen              112c6758     MSVCRTD:MSVCR80D.dll
+ 0005:0000075c       __imp__sprintf             112c675c     MSVCRTD:MSVCR80D.dll
+ 0005:00000760       __imp___purecall           112c6760     MSVCRTD:MSVCR80D.dll
+ 0005:00000764       __imp__memmove_s           112c6764     MSVCRTD:MSVCR80D.dll
+ 0005:00000768       __imp_?what@exception@std@@UBEPBDXZ 112c6768     MSVCRTD:MSVCR80D.dll
+ 0005:0000076c       __imp_??0exception@std@@QAE@ABQBD@Z 112c676c     MSVCRTD:MSVCR80D.dll
+ 0005:00000770       __imp_??0exception@std@@QAE@XZ 112c6770     MSVCRTD:MSVCR80D.dll
+ 0005:00000774       __imp_??1exception@std@@UAE@XZ 112c6774     MSVCRTD:MSVCR80D.dll
+ 0005:00000778       __imp_??0exception@std@@QAE@ABV01@@Z 112c6778     MSVCRTD:MSVCR80D.dll
+ 0005:0000077c       __imp___CxxThrowException@8 112c677c     MSVCRTD:MSVCR80D.dll
+ 0005:00000780       __imp____CxxFrameHandler3  112c6780     MSVCRTD:MSVCR80D.dll
+ 0005:00000784       __imp_??2@YAPAXI@Z         112c6784     MSVCRTD:MSVCR80D.dll
+ 0005:00000788       __imp_??3@YAXPAX@Z         112c6788     MSVCRTD:MSVCR80D.dll
+ 0005:0000078c       __imp___CrtDbgReportW      112c678c     MSVCRTD:MSVCR80D.dll
+ 0005:00000790       __imp___invalid_parameter  112c6790     MSVCRTD:MSVCR80D.dll
+ 0005:00000794       __imp__floor               112c6794     MSVCRTD:MSVCR80D.dll
+ 0005:00000798       \177MSVCR80D_NULL_THUNK_DATA 112c6798     MSVCRTD:MSVCR80D.dll
+ 0005:000007ec       __imp__CharLowerBuffA@8    112c67ec     user32:USER32.dll
+ 0005:000007f0       __imp__GetForegroundWindow@0 112c67f0     user32:USER32.dll
+ 0005:000007f4       \177USER32_NULL_THUNK_DATA 112c67f4     user32:USER32.dll
+ 0005:00000820       __imp__mexPrintf           112c6820     libmex:libmex.dll
+ 0005:00000824       \177libmex_NULL_THUNK_DATA 112c6824     libmex:libmex.dll
+ 0005:00000850       __imp__mxArrayToString     112c6850     libmx:libmx.dll
+ 0005:00000854       __imp__mxCreateDoubleMatrix_730 112c6854     libmx:libmx.dll
+ 0005:00000858       __imp__mxGetPr             112c6858     libmx:libmx.dll
+ 0005:0000085c       \177libmx_NULL_THUNK_DATA  112c685c     libmx:libmx.dll
+ 0005:00000888       __imp__CoInitialize@4      112c6888     ole32:ole32.dll
+ 0005:0000088c       __imp__CLSIDFromString@8   112c688c     ole32:ole32.dll
+ 0005:00000890       __imp__CoCreateInstance@20 112c6890     ole32:ole32.dll
+ 0005:00000894       __imp__CoUninitialize@0    112c6894     ole32:ole32.dll
+ 0005:00000898       \177ole32_NULL_THUNK_DATA  112c6898     ole32:ole32.dll
+
+ entry point at        0002:000006d6
+

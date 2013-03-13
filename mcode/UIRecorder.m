@@ -234,7 +234,7 @@ set(handles.play,'keyPressFcn',@key_Callback);
 % set(handles.rec_slider,'keyPressFcn',@key_Callback);
 set(handles.msgh,'keyPressFcn',@key_Callback);
 
-set(handles.strh,'string','HELLO','visible','on');
+set(handles.strh,'string','Hello','visible','on');
 
 set(hObject,'visible','on');
 
