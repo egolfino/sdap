@@ -94,7 +94,6 @@ logstring (['Run: ' runNumStr]);
 % Presents instructions to the subject
 cgpencol(1,1,1);
 cgfont(font_type,50);
-cgtext('Hello!',0,200);
 cgtext('The run is about to begin. Please begin the task',0,100);
 cgtext('as soon as you see the + and stop the task',0,50);
 cgtext('when the + disappears. Please try not to make',0,0);
@@ -163,8 +162,8 @@ logstring(['End of run : ' num2str(xhairTime)]);
 clearpict(0,background_color);
 
 cgpencol(1,1,1);
-cgfont(font_type,100);
-cgtext('Thank You!',0,150);
+cgfont(font_type,50);
+cgtext('Thank You!',0,100);
 cgtext('Please try not to make unnecessary movements',0,50); 
 cgtext('while we prepare for the next run.',0,0);
 cgflip(1,1,1);

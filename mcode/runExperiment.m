@@ -556,7 +556,7 @@ while n <= expt.expt_config.NUM_RUNS
 %     end
 %     drawnow    
 
-    set(hgui.strh, 'string', getMsgStr(n), 'visible', 'on');
+    set(hgui.strh, 'string', getMsgStr(n), 'visible', 'on'); 
     set(hgui.strh, 'FontSize', 30);
 
     MexIO('init', p);  %SC Inject p to TransShiftMex
@@ -641,7 +641,6 @@ while n <= expt.expt_config.NUM_RUNS
 
         UIRecorder('singleTrial', hgui.play, 1, hgui);
         data=get(hgui.UIrecorder,'UserData');           %SC Retrieve the data
-
         data.timeStamp = clock;
         data.expt = expt;
         data.params.name = thisWord;
