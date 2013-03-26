@@ -138,6 +138,11 @@ end
 %% initialize algorithm
 MexIO('init',p);      %SC Set the initial (default) parameters
 
+TransShiftMex(1);
+pause(0.5);
+TransShiftMex(2);
+[~] = TransShiftMex(4);
+
 if ((p.frameShift-round(p.frameShift)~=0) || (p.frameShift>p.frameLen))
     uiwait(errordlg(['Frameshift = ' num2str(p.frameShift) ' is a bad value. Set nWin and frameLen appropriately. Frameshift must be an integer & Frameshift <= Framelen'],'!! Error !!'))
     return
