@@ -258,9 +258,13 @@ else
     end
     if isequal(expt_config.BACKGROUND_COLOR, 'BLACK')
         set(hgui.UIrecorder, 'Color', 'k');
+        warning('off','MATLAB:HandleGraphics:ObsoletedProperty:JavaFrame');
+        jframe=get(hgui.UIrecorder,'javaframe');
+        jIcon=javax.swing.ImageIcon('C:\Users\egolfino\Desktop\newicon.gif');
+        jframe.setFigureIcon(jIcon);
         set(hgui.msgh, 'BackgroundColor', 'k');
         set(hgui.strh, 'BackgroundColor', 'k');
-        
+
         hgui.skin.fixation = imread(fullfile(pwd, 'graphics', 'fixation_blackBG.bmp'));
     end
     
