@@ -1,9 +1,9 @@
 function pairs=randomizeTrials
 
 conditionID = [1:8]';
-sentenceID = [1:5]';
+sentenceID = [1:3]';
 
-nTrials= 40;
+nTrials= 48;
 
 nCons = numel(conditionID); 
 nSentences = numel(sentenceID); 
@@ -13,6 +13,6 @@ frandomizedCons=conditionID(randomizedCons);
 randomizedSentences=zeros(size(randomizedCons));
 for iCond=1:nCons-2
     idxCond=find(frandomizedCons==conditionID(iCond));
-    randomizedSentences(idxCond)=randperm(nSentences);
+    randomizedSentences(idxCond)=mod([1:length(idxCond)],nSentences)+1;
 end
 pairs =[frandomizedCons randomizedSentences'];

@@ -1,5 +1,6 @@
 function varargout = MexIO(action,params,inFrame,varargin)
 %
+
 persistent p
 
 toPrompt=0; % set to 1 when necessary during debugging
@@ -25,9 +26,16 @@ switch(action)
         TransShiftMex(3,'bgainadapt',p.gainAdapt, toPrompt);
         TransShiftMex(3,'bshift',p.bShift, toPrompt);
         TransShiftMex(3,'btrack',p.bTrack, toPrompt);
-        TransShiftMex(3,'bdetect',p.bDetect, toPrompt);      
-        TransShiftMex(3,'avglen',p.avgLen, toPrompt);        
-        TransShiftMex(3,'bweight',p.bWeight, toPrompt);    
+        TransShiftMex(3,'bdetect',p.bDetect, toPrompt);        
+        
+       
+        
+        if (isfield(p,'avgLen'))
+            TransShiftMex(3,'avglen',p.avgLen, toPrompt);
+        end
+        if (isfield(p,'bWeight'))
+            TransShiftMex(3,'bweight',p.bWeight, toPrompt);
+        end
         
         if (isfield(p,'minVowelLen'))
             TransShiftMex(3,'minvowellen',p.minVowelLen, toPrompt);
@@ -38,16 +46,7 @@ switch(action)
         end
         if (isfield(p,'bMelShift'))
             TransShiftMex(3,'bmelshift',p.bMelShift, toPrompt);
-		end
-		
-%% SC(2009/02/06) RMS Clipping protection
-		if (isfield(p,'bRMSClip'))
-			TransShiftMex(3,'brmsclip',p.bRMSClip, toPrompt);
-		end
-		if (isfield(p,'rmsClipThresh'))
-			TransShiftMex(3,'rmsclipthresh',p.rmsClipThresh, toPrompt);
-		end
-		
+        end
 %% SC-Mod(2008/05/15) Cepstral lifting related
         if (isfield(p,'bCepsLift'))
             TransShiftMex(3,'bcepslift',p.bCepsLift, toPrompt);
@@ -110,12 +109,12 @@ switch(action)
         if (isfield(p,'bFact'))
             TransShiftMex(3,'bfact',p.bFact, toPrompt);
         else
-            TransShiftMex(3,'bfact',0.8, toPrompt);
+            TransShiftMex(3,'bfact',0.1, toPrompt);
         end
         if (isfield(p,'gFact'))
             TransShiftMex(3,'gfact',p.gFact, toPrompt);
         else
-            TransShiftMex(3,'gfact',1, toPrompt);
+            TransShiftMex(3,'gfact',0.2, toPrompt);
         end
         
         if (isfield(p,'fn1'))
@@ -128,19 +127,51 @@ switch(action)
         else
             TransShiftMex(3,'fn2',1500, toPrompt);
         end
+        
+        
+        %SC(2012/02/28) DAF
+        if (isfield(p, 'delayFrames'))
+            TransShiftMex(3, 'delayframes', p.delayFrames, toPrompt);
+        end
+        
+        %SC(2012/03/05) Frequency/pitch shifting
+        if (isfield(p, 'bPitchShift'))
+            TransShiftMex(3, 'bpitchshift', p.bPitchShift, toPrompt);
+        end
+        if (isfield(p, 'pitchShiftRatio'))
+            TransShiftMex(3, 'pitchshiftratio', p.pitchShiftRatio, toPrompt);
+        end
+        
+        if (isfield(p, 'pvocFrameLen'))
+            TransShiftMex(3, 'pvocframelen', p.pvocFrameLen, toPrompt);
+        end
+        if (isfield(p, 'pvocHop'))
+            TransShiftMex(3, 'pvochop', p.pvocHop, toPrompt);
+        end
+        
+        if (isfield(p, 'bDownSampFilt'))
+            TransShiftMex(3, 'bdownsampfilt', p.bDownSampFilt, toPrompt);
+        end
+        
         return;
 %%            
     case 'process',
+
         TransShiftMex(5,inFrame);
         return;
 
     case 'getData',
+
         nout=nargout;
-        [signalMat,dataMat]=TransShiftMex(4);        
+
+        [signalMat,dataMat]=TransShiftMex(4);       
+        
         data=[];
 
         switch(nout)
             case 1,
+
+%                 try
                 data.signalIn       = signalMat(:,1);
                 data.signalOut      = signalMat(:,2);
 
@@ -153,10 +184,11 @@ switch(action)
                 data.dfmts          = dataMat(:,offS+2*p.nTracks:offS+2*p.nTracks+1);
                 data.sfmts          = dataMat(:,offS+2*p.nTracks+2:offS+2*p.nTracks+3);
 
-                offS = offS+2*p.nTracks+4;
-                data.ai             = dataMat(:,offS:offS+p.nLPC);
+                 offS = offS+2*p.nTracks+4;
+                 data.ai             = dataMat(:,offS:offS+p.nLPC);
                 data.params         = p;
                 varargout(1)        = {data};
+
                 return;
 
             case 2,
@@ -165,17 +197,28 @@ switch(action)
                 return;
 
             case 3,
+
                 varargout(1)        = {transdataMat(1:2,2)'};
                 varargout(2)        = {transdataMat(1:2,3)'};
                 varargout(3)        = {transdataMat(2,1)-transdataMat(1,1)};
+
+
+
+                                
                 return;
 
             otherwise,
 
         end
+
+    case 'list',
+        TransShiftMex(0);
+        
     case 'reset',
         TransShiftMex(6);
+    
     otherwise,
+        
         
     uiwait(errordlg(['No such action : ' action ],'!! Error !!'));
 

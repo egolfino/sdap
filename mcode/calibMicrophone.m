@@ -1,4 +1,4 @@
-function calibMicrophone
+function calibMicrophone(varargin)
 %%
 calibWavFN = 'calib_vowel.wav';
 if ~isfile(calibWavFN)
@@ -18,9 +18,6 @@ foo=input('Press any enter to continue...','s');
 
 foo=input('Wait for SLM reading to stabilize. Press any enter to start TransShiftMex when ready...','s');
 
-TransShiftMex(1);
-pause(0.05);
-TransShiftMex(2);
 
 TransShiftMex(1);
 pause(2);
@@ -30,8 +27,13 @@ sig=sig(:,1);
 
 clear functions;
 
-figure;
-sr=12e3;
+if ~isempty(fsic(varargin, 'twoScreens'))
+    figure('Position', [1700, 400, 400, 300]);
+else
+    figure;
+end
+
+sr=16e3;
 taxis=0:(1/sr):((length(sig)-1)/sr);
 plot(taxis,sig); 
 hold on;
@@ -56,5 +58,7 @@ level_SLM=input('level_SLM = ');
 micRMS_100dBA=10^((100-level_SLM)/20)*rms(sig_sel);
 
 fprintf('rms(sig_sel) = %.5f\n', rms(sig_sel));
-fprintf(1, 'micRMS_100dBA target is 0.1 [0.09 - 0.11]\n');
 fprintf('micRMS_100dBA = %.5f\n', micRMS_100dBA);
+
+
+return

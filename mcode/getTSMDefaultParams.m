@@ -21,7 +21,7 @@ if ~isempty(fsic(varargin, 'DOWNSAMP_FACT'))
     p.downfact = varargin{fsic(varargin, 'DOWNSAMP_FACT') + 1};
 end
 
-p.closedLoopGain= 12;    % dB
+p.closedLoopGain= 0;    % dB
 
 if ~isempty(findStringInCell(varargin,'closedLoopGain'))
     p.closedLoopGain=varargin{findStringInCell(varargin,'closedLoopGain')+1};

@@ -2,15 +2,17 @@ function runExperiment(varargin)
 %%
 TRIAL_TYPES = {'NORMAL', 'DOWN_SHIFT', 'UP_SHIFT', 'MASKED', 'BASELINE'};
 
-%%
+ost_file = '../pert/ost';
+check_file(ost_file);
 
+%%
 DEBUG=0;
 [ret,hostName]=system('hostname');
 
 expt_config_fn = '../expt/expt_config.txt';
 fprintf('Reading experiment configuration from "%s" ... ', expt_config_fn);
 expt_config=read_parse_expt_config(expt_config_fn);
-fprintf('Done.\n');
+fprintf('Done reading experiment config from file: %s.\n', expt_config_fn);
 
 nRuns = expt_config.NUM_RUNS;
 nTrialsPerRun = expt_config.TRIALS_PER_RUN;
@@ -634,19 +636,25 @@ while n <= expt.expt_config.NUM_RUNS
         % ~Count down
 
         TransShiftMex(3, 'bpitchshift', 1, 1);
+        TransShiftMex(8, ost_file, 0); % Set online status tracking (ost) parameters
         if (hgui.trialType == 2 || hgui.trialType == 3)   %SC The distinction between train and test words
-            if hgui.trialType == 2 % Down shift
-                TransShiftMex(3, 'pitchshiftratio', 2 ^ (1 / 12 * expt.expt_config.PITCH_SHIFT_DOWN), 1);
-            else
-                TransShiftMex(3, 'pitchshiftratio', 2 ^ (1 / 12 * expt.expt_config.PITCH_SHIFT_UP), 1);
+            if hgui.trialType == 2 % -- Down shift -- %
+%                 TransShiftMex(3, 'pitchshiftratio', 2 ^ (1 / 12 * expt.expt_config.PITCH_SHIFT_DOWN), 1);
+                TransShiftMex(9, expt.expt_config.PITCH_SHIFT_DOWN_PCF);
+            else % -- Up shift -- %
+%                 TransShiftMex(3, 'pitchshiftratio', 2 ^ (1 / 12 * expt.expt_config.PITCH_SHIFT_UP), 1);
+                TransShiftMex(9, expt.expt_config.PITCH_SHIFT_UP_PCF);
             end
         else
-            TransShiftMex(3, 'pitchshiftratio', 1, 1);
+%             TransShiftMex(3, 'pitchshiftratio', 1, 1);
+            TransShiftMex(9, expt.expt_config.PITCH_SHIFT_NONE_PCF);
         end
 
 %         if (thisTrial==5)
 %             hgui.skin.facePnt=expt.script.(thisphase).(repString).face(k);
 %         end
+
+        MexIO('reset');
 
         UIRecorder('singleTrial', hgui.play, 1, hgui);
         data=get(hgui.UIrecorder,'UserData');           %SC Retrieve the data
@@ -702,7 +710,7 @@ end
 set(hgui.play,'cdata',hgui.skin.play,'userdata',0);
 set(hgui.msgh,'string',...
 	{'Congratulations!';...
-	'You have finished the expt.'},'visible','on');
+	'You have finished the expt.'},'visible','off');
 % set(hgui.msgh_imgh,'CData',CDataMessage.finish,'visible','on');
 pause(3);
 close(hgui.UIrecorder)

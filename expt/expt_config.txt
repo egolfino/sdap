@@ -1,17 +1,20 @@
-SUBJECT_ID      BOOTHTEST_0326_1
+SUBJECT_ID      SDAP_PIL28_BEH220713
 SUBJECT_GENDER  female
-SUBJECT_DOB     1-JAN-0000
-SUBJECT_GROUP	NA
+SUBJECT_DOB     1-JAN-1981
+SUBJECT_GROUP	CON
 
 DATA_DIR        C:\SDAP_DATA
 
 BACKGROUND_COLOR   BLACK
 TEXT_COLOR         WHITE
 
-PITCH_SHIFT_DOWN       -2  % Unit: semitones
-PITCH_SHIFT_UP				2  % Unit: semitones
+% PITCH_SHIFT_DOWN       -0.33  % Unit: semitones
+% PITCH_SHIFT_UP				0.33  % Unit: semitones
+PITCH_SHIFT_DOWN_PCF    ../pert/pitch_dn.pcf
+PITCH_SHIFT_UP_PCF    ../pert/pitch_up.pcf
+PITCH_SHIFT_NONE_PCF    ../pert/pitch_none.pcf
 
-MOUTH_MIC_DIST  9      % Unit: cm
+MOUTH_MIC_DIST  8      % Unit: cm
 
 SPL_TARGET      74      % Unit: dB A SPL. Lowered from the adult target of 76
 SPL_RANGE       8       % Unit: dB A SPL: single-sided width
@@ -22,19 +25,19 @@ VOWEL_LEN_RANGE 0.10     % sec: single-sided width
 USE_SPL_TARGET				0 % A 0/1 variable indicating whether the SPL target will be used.
 USE_VOWEL_LEN_TARGET	0 % A 0/1 variable indicating whether the vowel length will be used.
 
-NUM_RUNS				8		% Should match ExptDesign.xls
-TRIALS_PER_RUN		40 	% Should match ExptDesign.xls
+NUM_RUNS				4		% Should match ExptDesign.xls
+TRIALS_PER_RUN		48 	% Should match ExptDesign.xls
 
-MRI_TR 			10.0  % Unit: sec.
-MRI_TA 			2.5  % Unit: sec.
-STIM_DELAY		0.3 % Unit: sec. Delay from the scanner trigger to the onset of the visual stimulus display
-REC_DELAY		0.3 % Unit: sec. Delay from the scanner trigger to the onset of the auditory feedback and audio recording. Should be equal to or greather than STIM_DELAY
-REC_LEN			4.5 % Unit: sec. Length of the audio recording and/or auditory feedback perturbation.
+MRI_TR 			5  % Unit: sec.
+MRI_TA 			0.5  % Unit: sec.
+STIM_DELAY		0.5 % Unit: sec. Delay from the scanner trigger to the onset of the visual stimulus display
+REC_DELAY		0.5 % Unit: sec. Delay from the scanner trigger to the onset of the auditory feedback and audio recording. Should be equal to or greather than STIM_DELAY
+REC_LEN			3.5 % Unit: sec. Length of the audio recording and/or auditory feedback perturbation.
 
 SAMPLING_RATE   48000
 FRAME_SIZE      96 % MicroBook: 96; UltraLite: 64  
 DOWNSAMP_FACT   3 % MicroBook: 3; UltraLite: 4
 
-MASK_NOISE_LV	100 % Level of the multi-talker-babble masking noise. Unit: dB(A) SPL
+MASK_NOISE_LV	67 % Level of the multi-talker-babble masking noise. Unit: dB(A) SPL
 		   % Hall and Plack (2009). Pitch processing sites in the human auditory cortex. Cerebral Cortex 19(3): 576-585
 	           % 83 dB SPL behavioral sessions and 90 dB SPL for the fMRI

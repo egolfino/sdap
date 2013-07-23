@@ -33,8 +33,8 @@ for c=1:s
             %same just uncomment the next line (=no condition for that data)
             d=[d;b];
             idxBase=find(d==0);
-            baseOrder=repmat([1:5],1,2)';
-            d(idxBase)=baseOrder(randperm(10));
+            baseOrder=repmat([1:3],1,4)';
+            d(idxBase)=baseOrder(randperm(12));
         return
         end
     end

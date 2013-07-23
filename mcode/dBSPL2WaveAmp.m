@@ -33,7 +33,7 @@
 function wp=dBSPL2WaveAmp(lv,f,varargin)
 % Note: this applies to balance = 0 and Phones/CtrlRoom = Max on Behringer
 % Use Shanqing1 profile in M-Audio control panel. 
-load('../../signals/leveltest/outputCalibration_S14.mat'); % contains calib at 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 kHz. 
+load('../../signals/leveltest/outputCalibration_ER1.mat'); % contains calib at 0.1, 0.2, 0.3, 0.4, 0.5, 0.7, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 kHz. 
 % calib.f, calib.dBASPL (at max). 
 
 wp0=0.1;

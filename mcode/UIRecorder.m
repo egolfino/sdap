@@ -73,7 +73,8 @@ handles.trigByScanner=0;
 % handles.TR = 7.5;
 % handles.TA = 2.5;
 handles.run = '';
-handles.trigKey='add';	% To change
+% handles.trigKey='add';	% To change
+handles.trigKey='equal';	% To change
 handles.debug=0;
 handles.vumeterMode=NaN;  % 1: 10 ticks; 2: 3 ticks;
 
@@ -293,7 +294,7 @@ if (isequal(evnt.Key,hgui.trigKey) || isequal(evnt.Key,'a'))
     if ~isempty(hgui.exptDir) && isfile(fullfile(hgui.exptDir, 'lastTrigTime.mat'))
         load(fullfile(hgui.exptDir, 'lastTrigTime.mat')); % gives lastTrigTime
         fprintf('--> Trigger at %.2f s (%.2f s from last trigger) <--\n', ...
-                eTime, eTime - lastTrigTime);
+                eTime, eTime-lastTrigTime);
     else
         fprintf('--> Trigger at %.2f s <--\n', eTime);
     end
