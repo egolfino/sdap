@@ -117,7 +117,8 @@ if bNew % set up new experiment
     
     p = getTSMDefaultParams(expt.expt_config.SUBJECT_GENDER, ...
                             'DOWNSAMP_FACT', expt.expt_config.DOWNSAMP_FACT, ...
-                            'FRAME_SIZE', expt.expt_config.FRAME_SIZE / expt.expt_config.DOWNSAMP_FACT);
+                            'FRAME_SIZE', expt.expt_config.FRAME_SIZE / expt.expt_config.DOWNSAMP_FACT, ...
+                            'closedLoopGain', expt.expt_config.CLOSED_LOOP_GAIN);
     state.run = 1;
 %     state.trial = 1;
     state.params = p;
@@ -165,15 +166,13 @@ end
 
 %% Load the multi-talker babble noise
 [x_mtb, fs_mtb]=wavread('mtbabble48k.wav');
-% lenMTB=round(2.5*fs_mtb);
 
-gainMTB_fb=dBSPL2WaveAmp(expt.expt_config.MASK_NOISE_LV, 1000)/sqrt(2)/calcMaskNoiseRMS;
-% gainMTB_fb3=dBSPL2WaveAmp(subject.lvNoise3,1000,subject.pcrKnob)/sqrt(2)/calcMaskNoiseRMS;
-% x_mtb=cell(1,3);
-% x_mtb{1}=x(1:lenMTB);               x_mtb{1}=x_mtb{1}-mean(x_mtb{1});
-% x_mtb{2}=x(lenMTB+1:lenMTB*2);      x_mtb{2}=x_mtb{2}-mean(x_mtb{2});
-% x_mtb{3}=x(lenMTB*2+1:lenMTB*3);    x_mtb{3}=x_mtb{3}-mean(x_mtb{3});
-% TransShiftMex(3,'datapb',x_mtb{1});
+% gainMTB_fb=dBSPL2WaveAmp(expt.expt_config.MASK_NOISE_LV, 1000)/sqrt(2)/calcMaskNoiseRMS;
+
+%% Normalize the amplitude of the mtb noise
+x_mtb = x_mtb - mean(x_mtb);
+mb_rms = rms(x_mtb);
+x_mtb = x_mtb / mb_rms;
 
 %% expt
       
@@ -221,6 +220,12 @@ fprintf('\n');
 hgui.vocaLen=round(300*p.sr/(p.frameLen*1000)); % 300 ms, 225 frames
 hgui.lenRange=round(250*p.sr/(p.frameLen*1000));  % single-sided tolerance range: 0.4*250 = 100 ms
 disp(['Vowel duration range: [',num2str(300-0.4*250),',',num2str(300+0.4*250),'] ms.']);
+
+hgui.smnKernel0 = expt.expt_config.SMN_KERNEL_0;
+hgui.smnKernel1 = expt.expt_config.SMN_KERNEL_1;
+hgui.smnOnRamp = expt.expt_config.SMN_ON_RAMP;
+hgui.smnOffRamp = expt.expt_config.SMN_OFF_RAMP;
+hgui.smnGain = expt.expt_config.SMN_GAIN;
 
 hgui.debug=DEBUG;
 % hgui.trigKey='equal';
@@ -609,7 +614,8 @@ while n <= expt.expt_config.NUM_RUNS
         hgui.word = thisWord;
 
         if (hgui.trialType == 4)	% Speech with masking noise or passively listening to masking noise
-            TransShiftMex(3, 'datapb', gainMTB_fb * x_mtb, 0);
+%             TransShiftMex(3, 'datapb', gainMTB_fb * x_mtb, 0);
+            TransShiftMex(3, 'datapb', x_mtb, 0);
         end
 
         disp('');

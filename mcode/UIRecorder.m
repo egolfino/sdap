@@ -227,6 +227,12 @@ handles.rmsTransTarg=micRMS_100dBA / (10^((100-handles.rmsTransTarg_spl)/20));
 
 handles.exptDir = '';
 
+handles.smnGain = 10.0;
+handles.smnKernel0 = 0.8;
+handles.smnKernel1 = 0.99;
+handles.smnOnRamp = 0.25;
+handles.smnOffRamp = 0.125;
+
 guidata(hObject, handles);
 
 set(handles.UIrecorder,'keyPressFcn',@key_Callback);
@@ -559,7 +565,12 @@ if (handles.debug==0)
 %         end
 
         if (handles.trialType == 4)
-            TransShiftMex(3, 'fb', 2); % Noise masking
+%             TransShiftMex(3, 'fb', 2); % Noise masking
+            TransShiftMex(3, 'fb', 4); % Noise masking
+            TransShiftMex(3, 'rmsff_fb', ...
+                          [handles.smnKernel0, handles.smnKernel1, ...
+                           handles.smnOnRamp, handles.smnOffRamp]);
+            TransShiftMex(3, 'fb4gaindb', handles.smnGain);
         else
             TransShiftMex(3, 'fb', 1); % Normal or perturbed auditory feedback, no added noise        
         end
