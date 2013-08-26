@@ -61,11 +61,11 @@ end
 datafile=strcat('run',runNumStr,'.dat');
      
 if subNum < 10
-    eval(strcat('mkdir C:\SDAP_DATA\SDAP_PIL0',subNumStr,'_LOC080713\'));   
-    logfile=strcat('C:\SDAP_DATA\SDAP_PIL0',subNumStr,'_LOC080713\RUN0',runNumStr,'_',day,'-',hour,'-',min,'.log');
+    eval(strcat('mkdir C:\SDAP_DATA\SDAP_FMRC00',subNumStr,'_LOC082213\'));   
+    logfile=strcat('C:\SDAP_DATA\SDAP_FMRC00',subNumStr,'_LOC082213\RUN0',runNumStr,'_',day,'-',hour,'-',min,'.log');
 else
-    eval(strcat('mkdir C:\SDAP_DATA\SDAP_PIL',subNumStr,'_LOC080713\')); 
-    logfile=strcat('C:\SDAP_DATA\SDAP_PIL',subNumStr,'_LOC080713\RUN0',runNumStr,'_',day,'-',hour,'-',min,'.log');
+    eval(strcat('mkdir C:\SDAP_DATA\SDAP_FMRC0',subNumStr,'_LOC082213\')); 
+    logfile=strcat('C:\SDAP_DATA\SDAP_FMRC00',subNumStr,'_LOC082213\RUN0',runNumStr,'_',day,'-',hour,'-',min,'.log');
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,7 +156,7 @@ end
 
 xhairTime=drawpict( 2 );  
 %waituntil(scanTime+dummylength+totrunDur);
-waituntil(3000);
+waituntil(scanTime+totrunDur);
 logstring(['End of run : ' num2str(xhairTime)]);
 
 clearpict(0,background_color);

@@ -6,7 +6,7 @@ ost_file = '../pert/ost';
 check_file(ost_file);
 
 %%
-DEBUG=0;
+DEBUG = 0;
 [ret,hostName]=system('hostname');
 
 expt_config_fn = '../expt/expt_config.txt';

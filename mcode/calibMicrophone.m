@@ -5,6 +5,13 @@ if ~isfile(calibWavFN)
     error('Cannot find the wav file for calibration: %s\n', calibWavFN);
 end
 
+%% Initialize
+p = getTSMDefaultParams('female', ...
+                        'DOWNSAMP_FACT', 3, ...
+                        'FRAME_SIZE', 32, ...
+                        'closedLoopGain', 0);
+MexIO('init', p);
+
 %%
 TransShiftMex(0);
 TransShiftMex(3, 'srate', 16000);

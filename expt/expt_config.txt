@@ -1,4 +1,4 @@
-SUBJECT_ID      SDAP_TEST_20130723_1
+SUBJECT_ID      SDAP_TESTTRIM_082613
 SUBJECT_GENDER  female
 SUBJECT_DOB     1-JAN-1981
 SUBJECT_GROUP	CON
@@ -14,7 +14,7 @@ PITCH_SHIFT_DOWN_PCF    ../pert/pitch_dn.pcf
 PITCH_SHIFT_UP_PCF    ../pert/pitch_up.pcf
 PITCH_SHIFT_NONE_PCF    ../pert/pitch_none.pcf
 
-MOUTH_MIC_DIST  8      % Unit: cm
+MOUTH_MIC_DIST  4      % Unit: cm
 CLOSED_LOOP_GAIN 0      % Unit: dB
 
 SPL_TARGET      74      % Unit: dB A SPL. Lowered from the adult target of 76
@@ -29,10 +29,10 @@ USE_VOWEL_LEN_TARGET	0 % A 0/1 variable indicating whether the vowel length will
 NUM_RUNS			4		% Should match ExptDesign.xls
 TRIALS_PER_RUN		48 	% Should match ExptDesign.xls
 
-MRI_TR 			5  % Unit: sec.
-MRI_TA 			0.5  % Unit: sec.
-STIM_DELAY		0.5 % Unit: sec. Delay from the scanner trigger to the onset of the visual stimulus display
-REC_DELAY		0.5 % Unit: sec. Delay from the scanner trigger to the onset of the auditory feedback and audio recording. Should be equal to or greather than STIM_DELAY
+MRI_TR 			8  % Unit: sec.
+MRI_TA 			2.5  % Unit: sec.
+STIM_DELAY		0.3 % Unit: sec. Delay from the scanner trigger to the onset of the visual stimulus display
+REC_DELAY		0.3 % Unit: sec. Delay from the scanner trigger to the onset of the auditory feedback and audio recording. Should be equal to or greather than STIM_DELAY
 REC_LEN			3.5 % Unit: sec. Length of the audio recording and/or auditory feedback perturbation.
 
 SAMPLING_RATE   48000
@@ -43,7 +43,7 @@ MASK_NOISE_LV	67 % Level of the multi-talker-babble masking noise. Unit: dB(A) S
 		   % Hall and Plack (2009). Pitch processing sites in the human auditory cortex. Cerebral Cortex 19(3): 576-585
 	           % 83 dB SPL behavioral sessions and 90 dB SPL for the fMRI
 
-SMN_GAIN                10.0            % dB
+SMN_GAIN                0            % dB
 SMN_KERNEL_0        0.8             % < 1
 SMN_KERNEL_1        0.99
 SMN_ON_RAMP              0.25            % Unit: s
