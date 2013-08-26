@@ -1,4 +1,9 @@
 function p = getTSMDefaultParams(sex, varargin)
+%% Constants
+DEFAULT_MOUTH_MIC_DIST = 10;    % Unit: cm
+
+%%
+
 switch sex
     case 'male'
         p.nLPC          = 13; 
@@ -28,8 +33,15 @@ if ~isempty(findStringInCell(varargin,'closedLoopGain'))
 end
 
 
+if ~isempty(findStringInCell(varargin, 'mouthMicDist'))
+    p.mouthMicDist = varargin{findStringInCell(varargin,'mouthMicDist')+1};
+else
+    p.mouthMicDist = DEFAULT_MOUTH_MIC_DIST;
+end
 
-p.dScale        = 10^((p.closedLoopGain-calcClosedLoopGain)/20);
+p.dScale        = 10 ^ ((p.closedLoopGain - calcClosedLoopGain) / 20) ...
+                  / (DEFAULT_MOUTH_MIC_DIST / p.mouthMicDist);
+              
 p.preempFact    = 0.98;% preemp factor
 
 p.sr            = 48000/p.downfact;
@@ -62,13 +74,6 @@ p.nFmts         = 2;
 p.nTracks       = 4;
 p.bTrack        = 1;
 p.bWeight       = 1; % weigthing (short time rms) of moving average formant estimate o
-
-% RMS calculation
-if ~isempty(findStringInCell(varargin,'closedLoopGain'))
-    p.mouthMicDist=varargin{findStringInCell(varargin,'closedLoopGain')+1};
-else
-    p.mouthMicDist=10;
-end
 
 p.rmsThresh     = 0.020 * 10 ^ ((getSPLTarg(p.mouthMicDist) - 85) / 20); % Before: 0.04*10^((getSPLTarg('prod')-85)/20); % 2009/11/27, changed from 0.04* to 0.032*
 p.rmsRatioThresh= 1.3;% threshold for sibilant / vowel detection

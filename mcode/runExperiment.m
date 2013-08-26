@@ -22,6 +22,16 @@ fprintf('Reading experiment design from "%s" ... ', expt_design_fn);
 expt_design = read_expt_design(expt_design_fn, nRuns, nTrialsPerRun);
 fprintf('Done.\n');
 
+%% -- Input mouth-mic distance -- %
+if ~isempty(fsic(varargin, 'mouthMicDist'))
+    expt_config.MOUTH_MIC_DIST = varargin{fsic(varargin, 'mouthMicDist') + 1};
+else
+    expt_config.MOUTH_MIC_DIST = input('Please input mouth-mic distance (cm): ');
+end
+
+modify_expt_config(expt_config_fn, 'MOUTH_MIC_DIST', expt_config.MOUTH_MIC_DIST);
+fprintf(1, 'INFO: Modified the mouthMicDist field config file: %s\n', expt_config_fn);
+
 %% 
 expt.expt_config         = expt_config; 
 expt.expt_design         = expt_design;
@@ -118,7 +128,8 @@ if bNew % set up new experiment
     p = getTSMDefaultParams(expt.expt_config.SUBJECT_GENDER, ...
                             'DOWNSAMP_FACT', expt.expt_config.DOWNSAMP_FACT, ...
                             'FRAME_SIZE', expt.expt_config.FRAME_SIZE / expt.expt_config.DOWNSAMP_FACT, ...
-                            'closedLoopGain', expt.expt_config.CLOSED_LOOP_GAIN);
+                            'closedLoopGain', expt.expt_config.CLOSED_LOOP_GAIN, ...
+                            'mouthMicDist', expt.expt_config.MOUTH_MIC_DIST);
     state.run = 1;
 %     state.trial = 1;
     state.params = p;
